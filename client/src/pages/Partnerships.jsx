@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 export default function Partnerships() {
     const partners = [
@@ -143,9 +144,12 @@ export default function Partnerships() {
                     we would love to explore opportunities to work together.
                 </p>
 
-                <button className="bg-[#7A4B2A] text-white px-8 py-4 rounded-full hover:opacity-90 transition">
+                <Link
+                    to="/contact"
+                    className="inline-block bg-[#7A4B2A] text-white px-8 py-4 rounded-full hover:opacity-90 transition"
+                >
                     Become a Partner
-                </button>
+                </Link>
 
             </section>
 

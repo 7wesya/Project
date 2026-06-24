@@ -8,6 +8,8 @@ import Partnerships from "./pages/Partnerships";
 import Stories from "./pages/Stories";
 import Community from "./pages/Community";
 import Contact from "./pages/Contact";
+import Booking from "./pages/Booking";
+import JoinJourney from "./pages/JoinJourney";
 
 export default function App() {
   return (
@@ -21,6 +23,8 @@ export default function App() {
         <Route path="/stories" element={<Stories />} />
         <Route path="/community" element={<Community />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/booking/:experienceId" element={<Booking />} />
+        <Route path="/join-journey" element={<JoinJourney />} />
       </Routes>
     </BrowserRouter>
   );

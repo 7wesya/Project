@@ -4,26 +4,44 @@ import Footer from "../components/Footer";
 export default function Stories() {
     const stories = [
         {
+            category: "Culture",
+            title: "Keeping Culture Alive in a Changing World",
+            image: null,
+            description:
+                "A look at how communities are preserving traditions, customs and values while adapting to modern lifestyles.",
+        },
+        {
             category: "Identity",
             title: "What Does It Mean To Be Zambian Today?",
+            image: null,
             description:
                 "Exploring how tradition, modern life and global influences are shaping a new generation of cultural identity.",
         },
         {
-            category: "Food & Heritage",
-            title: "The Stories Hidden Around Our Tables",
+            category: "Language",
+            title: "The Power of Zambia's Many Languages",
+            image: null,
             description:
-                "From family recipes to shared meals, food carries memories, history and connections between generations.",
+                "Exploring how local languages connect generations, preserve history and strengthen cultural identity across the country.",
         },
         {
-            category: "Creative Voices",
-            title: "Artists Redefining African Storytelling",
+            category: "Heritage",
+            title: "Protecting the Treasures of Our Past",
+            image: null,
             description:
-                "A look at the creators, musicians and storytellers using new platforms to preserve and reinvent culture.",
+                "Discovering the historical sites, traditions and legacies that continue to shape Zambia's national identity.",
+        },
+        {
+            category: "Storytelling",
+            title: "Stories That Connect Generations",
+            image: null,
+            description:
+                "Examining the role of oral traditions, folktales and modern storytelling in preserving culture and sharing wisdom.",
         },
         {
             category: "Community",
             title: "Why Shared Experiences Matter",
+            image: null,
             description:
                 "The importance of gathering, listening and creating spaces where people feel seen and connected.",
         },
@@ -61,7 +79,16 @@ export default function Stories() {
 
                     <div className="grid lg:grid-cols-2">
 
-                        <div className="h-80 lg:h-full bg-gradient-to-br from-[#7A4B2A] to-[#C98B4A]">
+                        <div className="h-80 lg:h-full bg-[#E6DDD2] flex items-center justify-center">
+                            <div className="text-center">
+                                <div className="text-5xl mb-4">📸</div>
+                                <p className="text-[#7A4B2A] font-medium">
+                                    Featured Story Image
+                                </p>
+                                <p className="text-sm text-[#7A4B2A]/70 mt-2">
+                                    Replace with community photography
+                                </p>
+                            </div>
                         </div>
 
 
@@ -104,6 +131,16 @@ export default function Stories() {
                             key={story.title}
                             className="bg-white rounded-[32px] p-8 shadow-sm hover:shadow-xl transition duration-300"
                         >
+                            {/* Placeholder Image */}
+                            <div className="h-56 rounded-2xl bg-[#E6DDD2] flex items-center justify-center mb-6">
+                                <div className="text-center">
+                                    <div className="text-4xl mb-2">📸</div>
+                                    <p className="text-[#7A4B2A] font-medium">
+                                        Story Image Placeholder </p>
+                                    <p className="text-sm text-[#7A4B2A]/70">
+                                        Replace with community photography </p>
+                                </div>
+                            </div>
 
                             <p className="uppercase text-sm tracking-widest text-[#7A4B2A] mb-3">
                                 {story.category}

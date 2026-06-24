@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -15,7 +16,7 @@ export default function Home() {
                     <div>
 
                         <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-5">
-                            Culture • Heritage • Storytelling
+                            Experience • Preserve • Reimagine
                         </p>
 
                         <h1 className="text-6xl lg:text-7xl font-bold text-[#2F4F3E] leading-tight mb-6">
@@ -25,20 +26,24 @@ export default function Home() {
                         </h1>
 
                         <p className="text-xl text-gray-700 leading-relaxed mb-10">
-                            Zed Speak is a cultural experiences, storytelling and heritage ecosystem
-                            dedicated to helping people experience, preserve and reimagine Zambian culture
-                            in meaningful and contemporary ways.
+                            Culture isn't something to watch from a distance. It's something
+                            to experience, share, question, preserve and reimagine together.
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-
-                            <button className="bg-[#7A4B2A] text-white px-8 py-4 rounded-full">
+                            <Link
+                                to="/experiences"
+                                className="inline-block bg-[#7A4B2A] text-white px-6 py-3 rounded-full hover:opacity-90 transition"
+                            >
                                 Explore Experiences
-                            </button>
+                            </Link>
 
-                            <button className="border border-[#7A4B2A] text-[#7A4B2A] px-8 py-4 rounded-full">
-                                Join Community
-                            </button>
+                            <Link
+                                to="/join-journey"
+                                className="border border-[#7A4B2A] text-[#7A4B2A] px-8 py-4 rounded-full hover:bg-[#7A4B2A] hover:text-white transition"
+                            >
+                                Join The Journey
+                            </Link>
 
                         </div>
 
@@ -58,86 +63,126 @@ export default function Home() {
 
             </section>
 
-            {/* About Preview */}
+            {/* What is Zed Speak */}
 
             <section className="py-24 px-6 bg-white">
 
                 <div className="max-w-6xl mx-auto text-center">
 
                     <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
-                        About Zed Speak
+                        What is Zed Speak?
                     </p>
 
                     <h2 className="text-5xl font-bold text-[#2F4F3E] mb-6">
-                        Reimagining Culture For Today
+                        Culture, But Different
                     </h2>
 
-                    <p className="max-w-3xl mx-auto text-lg text-gray-700">
-                        We believe culture is not something static.
-                        It is lived, shared, questioned and continuously evolving.
-                        Through experiences, storytelling and community engagement,
-                        we help people connect more deeply with identity, belonging
-                        and heritage.
-                    </p>
+                    <div className="max-w-3xl mx-auto text-lg text-gray-700">
+                        <p className="mb-6">
+                            Zed Speak is a cultural experience, heritage and storytelling
+                            ecosystem dedicated to helping people experience, preserve
+                            and reimagine Zambian culture in meaningful and contemporary
+                            ways.
+                        </p>
 
-                </div>
-
-            </section>
-
-            {/* Experiences */}
-
-            <section className="py-24 px-6">
-
-                <div className="max-w-7xl mx-auto">
-
-                    <h2 className="text-5xl font-bold text-[#2F4F3E] mb-12">
-                        Featured Experiences
-                    </h2>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-                        {[
-                            "The Zed Table",
-                            "Culture Nights",
-                            "Cook & Connect",
-                            "Echoes Of Home"
-                        ].map((item) => (
-                            <div
-                                key={item}
-                                className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition"
-                            >
-                                <h3 className="text-2xl font-semibold mb-4">
-                                    {item}
-                                </h3>
-
-                                <p className="text-gray-600">
-                                    Bringing people together through culture,
-                                    stories and meaningful experiences.
-                                </p>
-                            </div>
-                        ))}
-
+                        <p>
+                            Through experiences, programmes, products and partnerships,
+                            we create opportunities for people to connect with culture,
+                            celebrate identity and explore new possibilities for the future.
+                        </p>
                     </div>
 
                 </div>
 
             </section>
 
-            {/* Impact */}
+            {/* The Three Pillars */}
+
+            <section className="py-24 px-6">
+
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-16">
+                        <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
+                            The Three Pillars </p>
+                        <h2 className="text-5xl font-bold text-[#2F4F3E]">
+                            How We Engage With Culture </h2>
+                    </div>
+                    <div className="grid md:grid-cols-3 gap-8">
+                        <div className="bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-xl transition">
+                            <div className="h-64 bg-[#E6DDD2] flex items-center justify-center">
+                                <div className="text-center">
+                                    <div className="text-5xl mb-3">📸</div>
+                                    <p className="text-[#7A4B2A]"> Experience Culture Image </p>
+                                </div> </div> <div className="p-8">
+                                <h3 className="text-3xl font-bold mb-4"> Experience Culture </h3>
+                                <p className="text-gray-600"> Interactive experiences, games, conversations and cultural journeys. </p>
+                            </div>
+                        </div>
+                        <div className="bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-xl transition">
+                            <div className="h-64 bg-[#E6DDD2] flex items-center justify-center">
+                                <div className="text-center">
+                                    <div className="text-5xl mb-3">📸</div>
+                                    <p className="text-[#7A4B2A]"> Preserve Culture Image </p>
+                                </div> </div> <div className="p-8"> <h3 className="text-3xl font-bold mb-4"> Preserve Culture </h3>
+                                <p className="text-gray-600"> Stories, languages, heritage and cultural knowledge. </p>
+                            </div> </div>
+                        <div className="bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-xl transition">
+                            <div className="h-64 bg-[#E6DDD2] flex items-center justify-center">
+                                <div className="text-center">
+                                    <div className="text-5xl mb-3">📸</div>
+                                    <p className="text-[#7A4B2A]"> Reimagine Culture Image </p>
+                                </div> </div> <div className="p-8">
+                                <h3 className="text-3xl font-bold mb-4"> Reimagine Culture </h3>
+                                <p className="text-gray-600"> Creativity, innovation, technology and future culture. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            {/* Through the Zed Speak Lens */}
+            <section className="py-24 px-6 bg-white">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-16">
+                        <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
+                            Through The Zed Speak Lens </p>
+                        <h2 className="text-5xl font-bold text-[#2F4F3E] mb-6">
+                            Capturing moments that help people experience, preserve and reimagine culture. </h2>
+                        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                            Real moments. Real people. Real experiences. This space will showcase photography from our programmes, experiences and community events. </p>
+                    </div>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {[1, 2, 3, 4, 5, 6].map((item) => (<div key={item} className="h-72 rounded-[24px] bg-[#E6DDD2] flex items-center justify-center" >
+                            <div className="text-center">
+                                <div className="text-5xl mb-3">📸</div>
+                                <p className="text-[#7A4B2A]"> Event Photo Placeholder </p>
+                            </div> </div>))}
+                    </div>
+                </div>
+            </section>
+
+
+
+            {/* Get Involved */}
 
             <section className="bg-[#2F4F3E] text-white py-24 px-6">
 
-                <div className="max-w-6xl mx-auto text-center">
-
-                    <h2 className="text-5xl font-bold mb-8">
-                        Cultural Impact & Programmes
-                    </h2>
-
-                    <p className="max-w-3xl mx-auto text-white/80 text-lg">
-                        We create programmes focused on heritage, identity,
-                        storytelling, belonging, language preservation and future culture.
-                    </p>
-
+                <div className="max-w-5xl mx-auto text-center">
+                    <p className="uppercase tracking-[0.3em] text-white/70 mb-4">
+                        Get Involved </p>
+                    <h2 className="text-5xl font-bold mb-6">
+                        There Are Many Ways To Be Part Of The Journey </h2>
+                    <p className="text-xl text-white/80 mb-12">
+                        Experience culture, collaborate with us or support the movement to preserve and reimagine culture. </p>
+                    <div className="flex flex-wrap justify-center gap-6">
+                        <Link to="/experiences" className="bg-white text-[#2F4F3E] px-8 py-4 rounded-full font-semibold" >
+                            Experiences </Link>
+                        <Link to="/partnerships" className="bg-[#7A4B2A] text-white px-8 py-4 rounded-full font-semibold" >
+                            Partner </Link>
+                        <Link to="/contact" className="border border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#2F4F3E] transition" >
+                            Support </Link>
+                    </div>
                 </div>
 
             </section>
@@ -149,17 +194,15 @@ export default function Home() {
                 <div className="max-w-5xl mx-auto bg-[#7A4B2A] rounded-[40px] p-16 text-center text-white">
 
                     <h2 className="text-5xl font-bold mb-6">
-                        Join The Conversation
+                        Ready to Experience Culture Differently?
                     </h2>
 
-                    <p className="text-xl mb-10 text-white/80">
-                        Become part of a growing community exploring culture,
-                        identity and belonging.
-                    </p>
-
-                    <button className="bg-white text-[#7A4B2A] px-8 py-4 rounded-full font-semibold">
-                        Join Community
-                    </button>
+                    <Link
+                        to="/join-journey"
+                        className="inline-block bg-white text-[#7A4B2A] px-8 py-4 rounded-full font-semibold hover:opacity-90 transition"
+                    >
+                        Join Comunity
+                    </Link>
 
                 </div>
 
