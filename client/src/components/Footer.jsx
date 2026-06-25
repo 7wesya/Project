@@ -126,7 +126,7 @@ export default function Footer() {
                             </p>
 
                             <p>
-                                📱 +260 XXX XXX XXX
+                                📱 +260 xxx xxx xxx
                             </p>
 
                         </div>

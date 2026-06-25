@@ -5,27 +5,45 @@ import { Link } from "react-router-dom";
 export default function Partnerships() {
     const partners = [
         {
-            title: "Corporate Partners",
+            title: "Schools",
             description:
-                "Collaborate with us to create meaningful cultural programmes, support community engagement and align your brand with authentic cultural impact.",
-            icon: "🏢",
+                "Partner with us to bring culture into learning through storytelling, language experiences, creative workshops and engaging programmes for students.",
+            icon: "🏫",
         },
         {
-            title: "Cultural Institutions",
+            title: "Cultural Practitioners",
             description:
-                "Museums, heritage organisations and cultural centres can work with us to preserve stories, traditions and collective identity.",
-            icon: "🏛️",
+                "We work with cultural practitioners, historians, heritage custodians and knowledge holders to preserve stories, traditions, languages and lived cultural knowledge.",
+            icon: "🪘",
         },
         {
-            title: "Artists & Creatives",
+            title: "Creatives",
             description:
-                "We welcome musicians, chefs, storytellers, writers and creatives who want to share their talents and shape cultural conversations.",
+                "Artists, musicians, photographers, filmmakers, chefs, writers and storytellers can collaborate with us to create experiences, shape narratives and bring culture to life in new ways.",
             icon: "🎨",
         },
         {
-            title: "Community & NGOs",
+            title: "Organisations",
             description:
-                "Together we can develop programmes that strengthen belonging, celebrate diversity and create lasting social impact.",
+                "We partner with organisations to design cultural programmes, team experiences and community initiatives that strengthen belonging, learning and meaningful engagement.",
+            icon: "🏢",
+        },
+        {
+            title: "Venues",
+            description:
+                "We welcome venue partners who can help host experiences, conversations, storytelling circles, exhibitions and cultural gatherings in spaces that bring people together.",
+            icon: "📍",
+        },
+        {
+            title: "Businesses",
+            description:
+                "Businesses can partner with Zed Speak to support cultural experiences, sponsor programmes, co-create activations and invest in meaningful community and cultural impact.",
+            icon: "🤝",
+        },
+        {
+            title: "Community Partners",
+            description:
+                "We collaborate with community groups, youth networks, local leaders and grassroots partners to create culturally grounded programmes that reflect the needs and stories of the people they serve.",
             icon: "🌍",
         },
     ];
@@ -42,13 +60,20 @@ export default function Partnerships() {
                 </p>
 
                 <h1 className="text-5xl md:text-7xl font-bold mb-8">
-                    Building Culture Together
+                    Let's Create Meaningful Cultural Experiences Together
                 </h1>
 
-                <p className="max-w-3xl mx-auto text-xl text-black/70">
-                    We believe meaningful cultural change happens through collaboration.
-                    Join us as we create experiences, preserve heritage and shape the future of culture.
+                <p className="max-w-3xl mx-auto text-xl text-black/70 mb-10">
+                    We welcome collaborations with schools, creatives, cultural practitioners,
+                    organisations, venues, businesses and community partners.
                 </p>
+
+                <Link
+                    to="/contact"
+                    className="inline-block bg-[#7A4B2A] text-white px-8 py-4 rounded-full hover:opacity-90 transition"
+                >
+                    Become a Partner
+                </Link>
             </section>
 
 

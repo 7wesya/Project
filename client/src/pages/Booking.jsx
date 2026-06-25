@@ -1,23 +1,65 @@
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Booking() {
-    const [experienceType, setExperienceType] = useState("Featured Experience");
     const { experienceId } = useParams();
+    const [bookingType, setBookingType] = useState("");
 
-    const experienceNames = {
-        "zed-table": "The Zed Table",
-        "kids-cultural-explorers": "Kids Cultural Explorers",
-        "beneath-the-chitenge": "Beneath the Chitenge Circle",
-        "keep-our-languages-alive": "Keep Our Languages Alive",
-        "stories-around-zambia": "Stories Around Zambia",
-        "culture-lab": "Culture Lab",
+    const bookingItems = {
+        "zed-table": {
+            title: "The Zed Table",
+            category: "Experience",
+        },
+        "kids-cultural-explorers": {
+            title: "Kids Cultural Explorers",
+            category: "Experience",
+        },
+        "roots-and-routes": {
+            title: "Roots & Routes",
+            category: "Experience",
+        },
+        "cook-and-connect": {
+            title: "Cook & Connect",
+            category: "Experience",
+        },
+        "beneath-the-chitenge-circle": {
+            title: "Beneath the Chitenge Circle",
+            category: "Programme",
+        },
+        "keep-our-languages-alive": {
+            title: "Keep Our Languages Alive",
+            category: "Programme",
+        },
+        "culture-lab": {
+            title: "Culture Lab",
+            category: "Programme",
+        },
     };
 
+    const selectedItem = bookingItems[experienceId];
+    const bookingCategory = selectedItem?.category || "Experience";
+
+    const bookingTypeOptions =
+        bookingCategory === "Programme"
+            ? ["Featured Programme", "Private Programme", "Custom Programme"]
+            : ["Featured Experience", "Private Experience", "Custom Experience"];
+
+    useEffect(() => {
+        setBookingType(bookingTypeOptions[0]);
+    }, [bookingCategory]);
+
+    const isCustomBooking =
+        bookingType === "Custom Experience" ||
+        bookingType === "Custom Programme";
+
+    const isPrivateBooking =
+        bookingType === "Private Experience" ||
+        bookingType === "Private Programme";
+
     return (
-        <div className="bg-[#F8F4EE] min-h-screen">
+        <div className="bg-[#F8F4EE] min-h-screen animate-fadeIn">
 
             <Navbar />
 
@@ -28,16 +70,16 @@ export default function Booking() {
                     <div className="text-center mb-12">
 
                         <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
-                            Experience Booking
+                            Booking & Enquiries
                         </p>
 
-                        <h1 className="text-5xl font-bold mb-6">
+                        <h1 className="text-5xl font-bold mb-6 text-[#2F4F3E]">
                             Book Your Experience
                         </h1>
 
-                        <p className="text-xl text-black/70">
+                        <p className="text-xl text-black/70 max-w-3xl mx-auto">
                             Tell us a little about what you're looking for and
-                            we'll help create the right cultural experience.
+                            we’ll help create the right Zed Speak experience or programme.
                         </p>
 
                     </div>
@@ -46,35 +88,54 @@ export default function Booking() {
 
                         <form className="space-y-6">
 
+                            {/* Selected Item */}
                             <div>
                                 <label className="block mb-2 font-medium">
-                                    Selected Experience
+                                    Selected Experience / Programme
                                 </label>
 
                                 <input
                                     type="text"
-                                    value={experienceNames[experienceId] || ""}
+                                    value={selectedItem?.title || ""}
                                     readOnly
                                     className="w-full border border-gray-300 rounded-2xl px-5 py-4 bg-gray-50"
                                 />
                             </div>
 
+                            {/* Booking Category */}
                             <div>
                                 <label className="block mb-2 font-medium">
-                                    Experience Type
+                                    Booking Category
+                                </label>
+
+                                <input
+                                    type="text"
+                                    value={selectedItem?.category || ""}
+                                    readOnly
+                                    className="w-full border border-gray-300 rounded-2xl px-5 py-4 bg-gray-50"
+                                />
+                            </div>
+
+                            {/* Booking Type */}
+                            <div>
+                                <label className="block mb-2 font-medium">
+                                    Booking Type
                                 </label>
 
                                 <select
-                                    value={experienceType}
-                                    onChange={(e) => setExperienceType(e.target.value)}
+                                    value={bookingType}
+                                    onChange={(e) => setBookingType(e.target.value)}
                                     className="w-full border border-gray-300 rounded-2xl px-5 py-4"
                                 >
-                                    <option>Featured Experience</option>
-                                    <option>Private Experience</option>
-                                    <option>Custom Experience</option>
+                                    {bookingTypeOptions.map((option) => (
+                                        <option key={option} value={option}>
+                                            {option}
+                                        </option>
+                                    ))}
                                 </select>
                             </div>
 
+                            {/* Contact Details */}
                             <div className="grid md:grid-cols-2 gap-6">
 
                                 <div>
@@ -84,7 +145,8 @@ export default function Booking() {
 
                                     <input
                                         type="text"
-                                        placeholder="Enter your name"
+                                        required
+                                        placeholder="Enter your full name"
                                         className="w-full border border-gray-300 rounded-2xl px-5 py-4"
                                     />
                                 </div>
@@ -113,7 +175,7 @@ export default function Booking() {
 
                                     <input
                                         type="tel"
-                                        placeholder="Phone Number"
+                                        placeholder="Phone number"
                                         className="w-full border border-gray-300 rounded-2xl px-5 py-4"
                                     />
                                 </div>
@@ -146,13 +208,12 @@ export default function Booking() {
                                 />
                             </div>
 
-                            {/* Custom Experience */}
-                            {experienceType === "Custom Experience" && (
-
+                            {/* Custom Booking Fields */}
+                            {isCustomBooking && (
                                 <div className="space-y-6 bg-[#F8F4EE] p-6 rounded-3xl">
 
                                     <h3 className="text-2xl font-bold text-[#2F4F3E]">
-                                        Custom Experience Details
+                                        Custom Booking Details
                                     </h3>
 
                                     <div>
@@ -162,7 +223,7 @@ export default function Booking() {
 
                                         <input
                                             type="text"
-                                            placeholder="Birthday, Community Event, Workshop..."
+                                            placeholder="Birthday, community event, workshop..."
                                             className="w-full border border-gray-300 rounded-2xl px-5 py-4"
                                         />
                                     </div>
@@ -186,7 +247,7 @@ export default function Booking() {
 
                                         <input
                                             type="text"
-                                            placeholder="Families, Students, Corporate Team..."
+                                            placeholder="Families, students, corporate team..."
                                             className="w-full border border-gray-300 rounded-2xl px-5 py-4"
                                         />
                                     </div>
@@ -206,16 +267,14 @@ export default function Booking() {
                                     </div>
 
                                 </div>
-
                             )}
 
-                            {/* Private Experience */}
-                            {experienceType === "Private Experience" && (
-
+                            {/* Private Booking Fields */}
+                            {isPrivateBooking && (
                                 <div className="space-y-6 bg-[#F8F4EE] p-6 rounded-3xl">
 
                                     <h3 className="text-2xl font-bold text-[#2F4F3E]">
-                                        Private Experience Details
+                                        Private Booking Details
                                     </h3>
 
                                     <div>
@@ -225,7 +284,7 @@ export default function Booking() {
 
                                         <input
                                             type="text"
-                                            placeholder="Birthday, Family Gathering, Celebration..."
+                                            placeholder="Birthday, family gathering, celebration..."
                                             className="w-full border border-gray-300 rounded-2xl px-5 py-4"
                                         />
                                     </div>
@@ -243,9 +302,9 @@ export default function Booking() {
                                     </div>
 
                                 </div>
-
                             )}
 
+                            {/* Extra Details */}
                             <div>
                                 <label className="block mb-2 font-medium">
                                     Tell Us More
@@ -277,4 +336,5 @@ export default function Booking() {
 
         </div>
     );
+
 }

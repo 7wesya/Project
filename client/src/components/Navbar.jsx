@@ -6,13 +6,15 @@ export default function Navbar() {
 
     const links = [
         { name: "Home", path: "/" },
-        { name: "About", path: "/about" },
         { name: "Experiences", path: "/experiences" },
-        { name: "Impact", path: "/impact" },
         { name: "Stories", path: "/stories" },
-        { name: "Partnerships", path: "/partnerships" },
+        { name: "Programmes", path: "/programmes" },
         { name: "Community", path: "/community" },
+        { name: "Products", path: "/products" },
+        { name: "Partnerships", path: "/partnerships" },
+        { name: "About", path: "/about" },
         { name: "Contact", path: "/contact" },
+
     ];
 
     return (

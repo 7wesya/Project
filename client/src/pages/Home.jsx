@@ -103,9 +103,9 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
                         <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
-                            The Three Pillars </p>
+                            How We Engage With Culture </p>
                         <h2 className="text-5xl font-bold text-[#2F4F3E]">
-                            How We Engage With Culture </h2>
+                            The Three Pillars </h2>
                     </div>
                     <div className="grid md:grid-cols-3 gap-8">
                         <div className="bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-xl transition">
@@ -146,9 +146,9 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
                         <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
-                            Through The Zed Speak Lens </p>
+                            Capturing moments that help people experience, preserve and reimagine culture. </p>
                         <h2 className="text-5xl font-bold text-[#2F4F3E] mb-6">
-                            Capturing moments that help people experience, preserve and reimagine culture. </h2>
+                            Through The Zed Speak Len </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                             Real moments. Real people. Real experiences. This space will showcase photography from our programmes, experiences and community events. </p>
                     </div>
@@ -170,9 +170,9 @@ export default function Home() {
 
                 <div className="max-w-5xl mx-auto text-center">
                     <p className="uppercase tracking-[0.3em] text-white/70 mb-4">
-                        Get Involved </p>
+                        There Are Many Ways To Be Part Of The Journey </p>
                     <h2 className="text-5xl font-bold mb-6">
-                        There Are Many Ways To Be Part Of The Journey </h2>
+                        Get Involved</h2>
                     <p className="text-xl text-white/80 mb-12">
                         Experience culture, collaborate with us or support the movement to preserve and reimagine culture. </p>
                     <div className="flex flex-wrap justify-center gap-6">
