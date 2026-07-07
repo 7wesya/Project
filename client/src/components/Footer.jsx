@@ -1,161 +1,149 @@
 import { Link } from "react-router-dom";
+import Logo from "./ui/Logo";
 
 export default function Footer() {
+    const exploreLinks = [
+        { name: "Home", path: "/" },
+        { name: "About", path: "/about" },
+        { name: "Experiences", path: "/experiences" },
+        { name: "Programmes", path: "/programmes" },
+        { name: "Stories", path: "/stories" },
+    ];
+
+    const communityLinks = [
+        { name: "Community", path: "/community" },
+        { name: "Partnerships", path: "/partnerships" },
+        { name: "Products", path: "/products" },
+        { name: "Join The Journey", path: "/join-journey" },
+        { name: "Contact", path: "/contact" },
+    ];
+
     return (
-        <footer className="bg-[#2F4F3E] text-[#F8F4EE]">
+        <footer className="bg-[#015A1F] text-white">
 
-            <div className="max-w-7xl mx-auto px-6 py-16">
+            <div className="max-w-7xl mx-auto px-6 py-20">
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
 
                     {/* Brand */}
-                    <div>
-                        <h2 className="text-3xl font-bold mb-5">
-                            Zed Speak
-                        </h2>
 
-                        <p className="text-[#F8F4EE]/80 leading-relaxed">
-                            A cultural movement celebrating identity,
-                            heritage, creativity and meaningful human
-                            connections through stories and experiences.
+                    <div>
+
+                        <Logo light />
+
+                        <p className="mt-6 text-white/80 leading-relaxed">
+                            Zed Speak is a cultural experiences,
+                            storytelling and heritage ecosystem helping
+                            people experience, preserve and reimagine
+                            Zambian culture in meaningful ways.
                         </p>
+
                     </div>
 
+                    {/* Explore */}
 
-                    {/* Navigation */}
                     <div>
-                        <h3 className="text-xl font-semibold mb-5">
+
+                        <h3 className="text-xl font-bold mb-6">
                             Explore
                         </h3>
 
-                        <ul className="space-y-3 text-[#F8F4EE]/80">
+                        <ul className="space-y-4">
 
-                            <li>
-                                <Link
-                                    to="/about"
-                                    className="hover:text-white transition"
-                                >
-                                    About Us
-                                </Link>
-                            </li>
+                            {exploreLinks.map((item) => (
 
-                            <li>
-                                <Link
-                                    to="/experiences"
-                                    className="hover:text-white transition"
-                                >
-                                    Experiences
-                                </Link>
-                            </li>
+                                <li key={item.name}>
 
-                            <li>
-                                <Link
-                                    to="/stories"
-                                    className="hover:text-white transition"
-                                >
-                                    Stories
-                                </Link>
-                            </li>
+                                    <Link
+                                        to={item.path}
+                                        className="text-white/80 hover:text-white transition"
+                                    >
+                                        {item.name}
+                                    </Link>
 
-                            <li>
-                                <Link
-                                    to="/impact"
-                                    className="hover:text-white transition"
-                                >
-                                    Cultural Impact
-                                </Link>
-                            </li>
+                                </li>
+
+                            ))}
 
                         </ul>
-                    </div>
 
+                    </div>
 
                     {/* Community */}
+
                     <div>
-                        <h3 className="text-xl font-semibold mb-5">
-                            Get Involved
+
+                        <h3 className="text-xl font-bold mb-6">
+                            Community
                         </h3>
 
-                        <ul className="space-y-3 text-[#F8F4EE]/80">
+                        <ul className="space-y-4">
 
-                            <li>
-                                <Link
-                                    to="/community"
-                                    className="hover:text-white transition"
-                                >
-                                    Join Community
-                                </Link>
-                            </li>
+                            {communityLinks.map((item) => (
 
-                            <li>
-                                <Link
-                                    to="/partnerships"
-                                    className="hover:text-white transition"
-                                >
-                                    Partnerships
-                                </Link>
-                            </li>
+                                <li key={item.name}>
 
-                            <li>
-                                <Link
-                                    to="/contact"
-                                    className="hover:text-white transition"
-                                >
-                                    Contact Us
-                                </Link>
-                            </li>
+                                    <Link
+                                        to={item.path}
+                                        className="text-white/80 hover:text-white transition"
+                                    >
+                                        {item.name}
+                                    </Link>
+
+                                </li>
+
+                            ))}
 
                         </ul>
+
                     </div>
 
-
                     {/* Contact */}
+
                     <div>
-                        <h3 className="text-xl font-semibold mb-5">
+
+                        <h3 className="text-xl font-bold mb-6">
                             Connect
                         </h3>
 
-                        <div className="space-y-3 text-[#F8F4EE]/80">
+                        <div className="space-y-4 text-white/80">
 
-                            <p>
-                                📍 Lusaka, Zambia
-                            </p>
+                            <p>📍 Lusaka, Zambia</p>
 
-                            <p>
-                                📧 hello@zedspeak.com
-                            </p>
+                            <p>📧 hello@zedspeak.com</p>
 
-                            <p>
-                                📱 +260 xxx xxx xxx
-                            </p>
+                            <p>📱 +260 XXX XXX XXX</p>
 
                         </div>
 
-
-                        {/* Socials */}
-                        <div className="flex gap-4 mt-6">
+                        <div className="flex gap-4 mt-8">
 
                             <a
                                 href="#"
-                                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#7A4B2A] transition"
+                                className="w-12 h-12 rounded-full bg-white/10 hover:bg-[#D71E0F] flex items-center justify-center transition-all duration-300"
                             >
                                 📷
                             </a>
 
-
                             <a
                                 href="#"
-                                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#7A4B2A] transition"
+                                className="w-12 h-12 rounded-full bg-white/10 hover:bg-[#D71E0F] flex items-center justify-center transition-all duration-300"
                             >
                                 📘
                             </a>
 
+                            <a
+                                href="#"
+                                className="w-12 h-12 rounded-full bg-white/10 hover:bg-[#D71E0F] flex items-center justify-center transition-all duration-300"
+                            >
+                                ▶️
+                            </a>
 
                             <a
                                 href="#"
-                                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#7A4B2A] transition"
+                                className="w-12 h-12 rounded-full bg-white/10 hover:bg-[#D71E0F] flex items-center justify-center transition-all duration-300"
                             >
-                                🎥
+                                💼
                             </a>
 
                         </div>
@@ -164,12 +152,15 @@ export default function Footer() {
 
                 </div>
 
+                <div className="border-t border-white/20 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
 
-                {/* Bottom */}
-                <div className="border-t border-white/20 mt-14 pt-8 text-center text-[#F8F4EE]/60">
+                    <p className="text-white/60">
+                        © {new Date().getFullYear()} Zed Speak. All Rights Reserved.
+                    </p>
 
-                    © {new Date().getFullYear()} Zed Speak.
-                    All rights reserved.
+                    <p className="text-white/60">
+                        Experience • Preserve • Reimagine
+                    </p>
 
                 </div>
 

@@ -1,80 +1,45 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Container from "../components/ui/Container";
+import Section from "../components/ui/Section";
+import SectionTitle from "../components/ui/SectionTitle";
+import Card from "../components/ui/Card";
+import PlaceholderImage from "../components/ui/PlaceholderImage";
+import stories from "../data/stories";
 import { Link } from "react-router-dom";
 
 export default function Stories() {
-    const stories = [
-        {
-            category: "Culture",
-            title: "How Culture Shapes The Way We Live, Gather And Belong",
-            image: null,
-            description:
-                "A reflection on how culture influences everyday life, relationships, traditions, celebrations and the spaces where people feel most at home.",
-        },
-        {
-            category: "Identity",
-            title: "What Does It Mean To Be Zambian Today?",
-            image: null,
-            description:
-                "Exploring how tradition, modern life, migration, memory and global influences continue to shape identity in contemporary Zambia.",
-        },
-        {
-            category: "Language",
-            title: "Why Language Matters More Than We Think",
-            image: null,
-            description:
-                "Looking at the role language plays in belonging, memory, intergenerational connection and the preservation of cultural knowledge.",
-        },
-        {
-            category: "Heritage",
-            title: "Preserving The Stories, Traditions And Knowledge We Inherit",
-            image: null,
-            description:
-                "An exploration of how heritage lives through memory, ritual, place, oral tradition and the responsibility of passing it forward.",
-        },
-        {
-            category: "Storytelling",
-            title: "The Power Of Stories To Keep Culture Alive",
-            image: null,
-            description:
-                "From oral traditions to modern platforms, storytelling remains one of the most powerful ways to remember, question and reimagine culture.",
-        },
-        {
-            category: "Community",
-            title: "Why Community Is At The Heart Of Cultural Connection",
-            image: null,
-            description:
-                "Culture is rarely experienced alone. This piece explores how community creates belonging, keeps traditions alive and makes cultural learning possible.",
-        },
-    ];
+
 
     return (
         <div className="bg-[#F8F4EE] min-h-screen animate-fadeIn">
             <Navbar />
 
             {/* Hero */}
-            <section className="pt-36 pb-20 px-6 text-center">
-                <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
-                    Stories That Help Us Experience,
-                    Preserve And Reimagine Culture
-                </p>
+            <Section className="pt-36">
 
-                <h1 className="text-5xl md:text-7xl font-bold mb-8 text-[#2F4F3E]">
-                    Stories & Insights
-                </h1>
+                <Container>
 
-                <p className="max-w-3xl mx-auto text-xl text-black/70">
-                    A growing collection of reflections, essays, conversations and
-                    cultural stories exploring identity, language, heritage,
-                    storytelling, community and the many ways culture shapes who we are.
-                </p>
-            </section>
+                    <SectionTitle
+                        subtitle="Stories & Insights"
+                        title="Stories That Help Us Experience, Preserve & Reimagine Culture"
+                        description="A growing collection of reflections, essays, conversations and cultural stories exploring identity, language, heritage, storytelling, community and the many ways culture shapes who we are."
+                    />
+
+                </Container>
+
+            </Section>
 
             {/* Featured Story */}
-            <section className="px-6 pb-16">
-                <div className="max-w-7xl mx-auto bg-[#2F4F3E] rounded-[40px] overflow-hidden">
-                    <div className="grid lg:grid-cols-2">
-                        <div className="h-80 lg:h-full bg-[#E6DDD2] flex items-center justify-center">
+            <Section className="pt-0 pb-16">
+                <Container>
+
+                    <div className="bg-[#015A1F] rounded-[40px] overflow-hidden shadow-lg">
+                        <div className="grid lg:grid-cols-2">
+                            <PlaceholderImage
+                                image={null}
+                                label="Featured Story"
+                            />
                             <div className="text-center px-6">
                                 <div className="text-5xl mb-4">📸</div>
                                 <p className="text-[#7A4B2A] font-medium">
@@ -107,8 +72,8 @@ export default function Stories() {
                             </button>
                         </div>
                     </div>
-                </div>
-            </section>
+                </Container>
+            </Section>
 
             {/* Story Categories / Article Grid */}
             <section className="px-6 pb-24">
@@ -130,28 +95,26 @@ export default function Stories() {
 
                     <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
                         {stories.map((story) => (
-                            <article
+                            <Card
                                 key={story.title}
-                                className="bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-xl transition duration-300"
+                                className="hover:-translate-y-1"
                             >
                                 {/* Story Image Placeholder */}
-                                <div className="h-64 bg-[#E6DDD2] flex items-center justify-center">
-                                    <div className="text-center px-6">
-                                        <div className="text-5xl mb-4">📰</div>
+                                <PlaceholderImage
 
-                                        <p className="text-[#7A4B2A] font-medium">
-                                            {story.category} Article Image
-                                        </p>
+                                    image={story.image}
 
-                                        <p className="text-sm text-[#7A4B2A]/70 mt-2">
-                                            Replace with article image
-                                        </p>
-                                    </div>
-                                </div>
+                                    label={story.category}
+
+                                />
 
                                 <div className="p-8">
                                     <p className="uppercase text-sm tracking-widest text-[#7A4B2A] mb-3">
                                         {story.category}
+                                    </p>
+
+                                    <p className="text-sm text-gray-500 mb-4">
+                                        {story.author} • {story.date} • {story.readTime}
                                     </p>
 
                                     <h3 className="text-2xl font-bold mb-4 text-[#2F4F3E] leading-snug">
@@ -162,11 +125,11 @@ export default function Stories() {
                                         {story.description}
                                     </p>
 
-                                    <button className="text-[#7A4B2A] font-semibold hover:underline">
+                                    <button className="font-semibold text-[#015A1F] hover:underline">
                                         Read More →
                                     </button>
                                 </div>
-                            </article>
+                            </Card>
                         ))}
                     </div>
                 </div>
@@ -202,7 +165,7 @@ export default function Stories() {
                         ].map((item) => (
                             <div
                                 key={item}
-                                className="bg-[#F8F4EE] rounded-[28px] p-6 shadow-sm"
+                                className="bg-[#F8F4EE] rounded-3xl p-8 shadow-sm hover:shadow-md transition"
                             >
                                 <p className="text-lg font-medium text-[#2F4F3E]">
                                     {item}
@@ -211,11 +174,11 @@ export default function Stories() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* CTA */}
-            <section className="py-24 px-6">
-                <div className="max-w-5xl mx-auto bg-[#7A4B2A] rounded-[40px] p-12 md:p-16 text-center text-white">
+            < section className="py-24 px-6" >
+                <div className="max-w-5xl mx-auto bg-[#015A1F] rounded-[40px] p-12 md:p-16 text-center text-white">
                     <p className="uppercase tracking-[0.3em] text-white/70 mb-4">
                         Join The Conversation
                     </p>
@@ -233,7 +196,7 @@ export default function Stories() {
                     <div className="flex flex-wrap justify-center gap-4">
                         <Link
                             to="/contact"
-                            className="inline-block bg-white text-[#7A4B2A] px-8 py-4 rounded-full font-semibold hover:opacity-90 transition"
+                            className="inline-block bg-white text-[#015A1F] px-8 py-4 rounded-full font-semibold hover:opacity-90 transition"
                         >
                             Share A Story
                         </Link>
@@ -246,9 +209,9 @@ export default function Stories() {
                         </Link>
                     </div>
                 </div>
-            </section>
+            </section >
 
             <Footer />
-        </div>
+        </div >
     );
 }

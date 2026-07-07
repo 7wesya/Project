@@ -2,6 +2,12 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
+import Container from "../components/ui/Container";
+import Section from "../components/ui/Section";
+import SectionTitle from "../components/ui/SectionTitle";
+import Card from "../components/ui/Card";
+import PlaceholderImage from "../components/ui/PlaceholderImage";
+
 export default function About() {
     const pillars = [
         {
@@ -55,38 +61,27 @@ export default function About() {
             <Navbar />
 
             {/* Hero */}
-            <section className="pt-36 pb-20 px-6">
-                <div className="max-w-6xl mx-auto text-center">
-                    <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
-                        Culture, But Different.
-                    </p>
+            <Section className="pt-36">
 
-                    <h1 className="text-5xl md:text-7xl font-bold text-[#2F4F3E] mb-8">
-                        About Zed Speak
-                    </h1>
+                <Container>
 
-                    <p className="max-w-3xl mx-auto text-xl text-black/70 leading-relaxed">
-                        Zed Speak is a cultural experiences and storytelling ecosystem
-                        helping people experience, preserve and reimagine Zambian culture
-                        in meaningful, engaging and contemporary ways.
-                    </p>
-                </div>
-            </section>
+                    <SectionTitle
+                        subtitle="Culture, But Different."
+                        title="About Zed Speak"
+                        description="Zed Speak is a cultural experiences and storytelling ecosystem helping people experience, preserve and reimagine Zambian culture in meaningful, engaging and contemporary ways."
+                    />
+
+                </Container>
+
+            </Section>
 
             {/* Our Story */}
             <section className="px-6 pb-24">
                 <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-                    <div className="bg-[#E6DDD2] rounded-[40px] min-h-[420px] flex items-center justify-center p-8">
-                        <div className="text-center">
-                            <div className="text-6xl mb-4">📸</div>
-                            <p className="text-[#7A4B2A] font-semibold text-lg">
-                                Our Story Image Placeholder
-                            </p>
-                            <p className="text-[#7A4B2A]/70 mt-2">
-                                Replace with founder or brand storytelling image
-                            </p>
-                        </div>
-                    </div>
+                    <PlaceholderImage
+                        image={null}
+                        label="Our Story Image"
+                    />
 
                     <div>
                         <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
@@ -136,7 +131,7 @@ export default function About() {
             {/* Vision + Mission */}
             <section className="bg-white py-24 px-6">
                 <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
-                    <div className="bg-[#F8F4EE] rounded-[32px] p-10 shadow-sm">
+                    <Card className="p-10 bg-[#F8F4EE]">
                         <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
                             Where We’re Going
                         </p>
@@ -150,9 +145,9 @@ export default function About() {
                             ecosystem, inspiring people to connect with, celebrate and shape
                             the future of Zambian culture.
                         </p>
-                    </div>
+                    </Card>
 
-                    <div className="bg-[#F8F4EE] rounded-[32px] p-10 shadow-sm">
+                    <Card className="p-10 bg-[#F8F4EE]">
                         <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
                             What We’re Here To Do
                         </p>
@@ -166,12 +161,12 @@ export default function About() {
                             through storytelling, heritage, creativity, learning, connection,
                             and contemporary ways of engaging with culture.
                         </p>
-                    </div>
+                    </Card>
                 </div>
-            </section>
+            </section >
 
             {/* Experience • Preserve • Reimagine */}
-            <section className="py-24 px-6">
+            < section className="py-24 px-6" >
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
                         <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
@@ -190,21 +185,11 @@ export default function About() {
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {pillars.map((pillar) => (
-                            <div
-                                key={pillar.title}
-                                className="bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-xl transition"
-                            >
-                                <div className="h-64 bg-[#E6DDD2] flex items-center justify-center p-6">
-                                    <div className="text-center">
-                                        <div className="text-5xl mb-4">📸</div>
-                                        <p className="text-[#7A4B2A] font-semibold">
-                                            {pillar.title}
-                                        </p>
-                                        <p className="text-sm text-[#7A4B2A]/70 mt-2">
-                                            Pillar Image Placeholder
-                                        </p>
-                                    </div>
-                                </div>
+                            <Card key={pillar.title}>
+                                <PlaceholderImage
+                                    image={null}
+                                    label={pillar.title}
+                                />
 
                                 <div className="p-8">
                                     <h3 className="text-3xl font-bold text-[#2F4F3E] mb-4">
@@ -215,14 +200,14 @@ export default function About() {
                                         {pillar.description}
                                     </p>
                                 </div>
-                            </div>
+                            </Card>
                         ))}
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* What We Do */}
-            <section className="bg-[#2F4F3E] text-white py-24 px-6">
+            < section className="bg-[#2F4F3E] text-white py-24 px-6" >
                 <div className="max-w-6xl mx-auto text-center">
                     <p className="uppercase tracking-[0.3em] text-white/70 mb-4">
                         What We Do
@@ -254,10 +239,10 @@ export default function About() {
                         </Link>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Who We Serve */}
-            <section className="py-24 px-6">
+            < section className="py-24 px-6" >
                 <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
@@ -302,10 +287,10 @@ export default function About() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Why Culture, But Different */}
-            <section className="bg-white py-24 px-6">
+            < section className="bg-white py-24 px-6" >
                 <div className="max-w-5xl mx-auto text-center">
                     <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
                         Why “Culture, But Different?”
@@ -346,10 +331,10 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Meet the Team */}
-            <section className="py-24 px-6">
+            < section className="py-24 px-6" >
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
                         <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
@@ -370,21 +355,12 @@ export default function About() {
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {teamMembers.map((member, index) => (
-                            <div
-                                key={`${member.name}-${index}`}
-                                className="bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-xl transition"
-                            >
-                                <div className="h-72 bg-[#E6DDD2] flex items-center justify-center p-6">
-                                    <div className="text-center">
-                                        <div className="text-5xl mb-4">📸</div>
-                                        <p className="text-[#7A4B2A] font-semibold">
-                                            Team Photo Placeholder
-                                        </p>
-                                        <p className="text-sm text-[#7A4B2A]/70 mt-2">
-                                            Replace with team member image
-                                        </p>
-                                    </div>
-                                </div>
+                            <Card key={`${member.name}-${index}`}>
+                                <PlaceholderImage
+                                    image={null}
+                                    label={member.name}
+                                />
+
 
                                 <div className="p-8">
                                     <h3 className="text-2xl font-bold text-[#2F4F3E] mb-2">
@@ -399,14 +375,14 @@ export default function About() {
                                         {member.bio}
                                     </p>
                                 </div>
-                            </div>
+                            </Card>
                         ))}
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Our Community */}
-            <section className="bg-[#2F4F3E] text-white py-24 px-6">
+            < section className="bg-white/10 rounded-3xl p-8 text-center transition hover:bg-white/20">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-14">
                         <p className="uppercase tracking-[0.3em] text-white/70 mb-4">
@@ -417,7 +393,7 @@ export default function About() {
                             Our Community
                         </h2>
 
-                        <p className="max-w-4xl mx-auto text-lg text-white/80 leading-relaxed">
+                        <p className="max-w-4xl mx-auto text-lg text-black/70">
                             Zed Speak is strengthened by the people who participate in our experiences,
                             share their stories, contribute their knowledge and help keep culture alive.
                         </p>
@@ -434,10 +410,10 @@ export default function About() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Join the Journey */}
-            <section className="py-24 px-6">
+            < section className="py-24 px-6" >
                 <div className="max-w-5xl mx-auto bg-[#7A4B2A] rounded-[40px] p-12 md:p-16 text-center text-white">
                     <p className="uppercase tracking-[0.3em] text-white/70 mb-4">
                         Join The Journey
@@ -469,9 +445,9 @@ export default function About() {
                         </Link>
                     </div>
                 </div>
-            </section>
+            </section >
 
             <Footer />
-        </div>
+        </div >
     );
 }

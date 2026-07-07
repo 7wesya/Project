@@ -5,8 +5,20 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: Inter, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: #0F0F0E;
+  background: #FFFFFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #015A1F;
 }
 
 @keyframes fadeIn {
