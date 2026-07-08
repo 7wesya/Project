@@ -54,15 +54,20 @@ export default function Home() {
                             Experience • Preserve • Reimagine
                         </p>
 
-                        <h1 className="text-6xl lg:text-7xl font-bold text-[#015A1F] leading-tight mb-8">
+                        <h1 className="text-6xl lg:text-7xl font-bold leading-tight mb-8">
+                            <span className="text-[#015A1F]">
+                                Culture,
+                            </span>
 
-                            Culture,
                             <br />
 
                             <span className="text-[#D71E0F]">
-                                But Different.
-                            </span>
+                                But
+                            </span>{" "}
 
+                            <span className="text-[#F59E0B]">
+                                Different.
+                            </span>
                         </h1>
 
                         <p className="text-xl text-[#0F0F0E]/75 leading-relaxed mb-10">
@@ -337,11 +342,11 @@ export default function Home() {
                     <div className="text-center mb-16">
 
                         <p className="uppercase tracking-[0.35em] text-[#015A1F] font-semibold mb-4">
-                            Through The Zed Speak Lens
+                            Moments That Tell Our Story
                         </p>
 
                         <h2 className="text-5xl font-bold text-[#015A1F] mb-6">
-                            Moments That Tell Our Story
+                            Through The Zed Speak Lens
                         </h2>
 
                         <p className="max-w-3xl mx-auto text-lg text-[#0F0F0E]/75 leading-relaxed">
@@ -502,7 +507,7 @@ export default function Home() {
                             Culture Starts With People
                         </p>
 
-                        <h2 className="text-5xl md:text-6xl font-bold mb-8">
+                        <h2 className="text-5xl md:text-6xl font-bold mb-8 !text-white">
                             Ready To Experience
                             <br />
                             Culture Differently?
@@ -523,10 +528,8 @@ export default function Home() {
                                 Join The Journey
                             </Button>
 
-                            <Button
-                                variant="secondary"
-                                to="/contact"
-                            >
+                            <Button to="/contact">
+
                                 Contact Us
                             </Button>
 

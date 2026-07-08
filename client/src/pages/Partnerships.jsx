@@ -107,16 +107,16 @@ export default function Partnerships() {
             {/* Partnership Benefits */}
             <section className="bg-[#2F4F3E] text-white py-24 px-6">
 
-                <div className="max-w-6xl mx-auto text-center">
+                <div className="max-w-6xl mx-auto text-center text-white">
 
-                    <h2 className="text-5xl font-bold mb-10">
+                    <h2 className="text-5xl font-bold mb-10 !text-white">
                         Why Partner With Zed Speak?
                     </h2>
 
                     <div className="grid md:grid-cols-3 gap-8 text-left">
 
                         <div className="bg-white/10 rounded-3xl p-8">
-                            <h3 className="text-2xl font-bold mb-4">
+                            <h3 className="text-2xl text-white font-bold mb-4 !text-white">
                                 Cultural Impact
                             </h3>
 
@@ -128,7 +128,7 @@ export default function Partnerships() {
 
 
                         <div className="bg-white/10 rounded-3xl p-8">
-                            <h3 className="text-2xl font-bold mb-4">
+                            <h3 className="text-2xl font-bold mb-4 !text-white">
                                 Meaningful Engagement
                             </h3>
 
@@ -140,7 +140,7 @@ export default function Partnerships() {
 
 
                         <div className="bg-white/10 rounded-3xl p-8">
-                            <h3 className="text-2xl font-bold mb-4">
+                            <h3 className="text-2xl font-bold mb-4 !text-white">
                                 Shared Growth
                             </h3>
 

@@ -213,7 +213,7 @@ export default function About() {
                         What We Do
                     </p>
 
-                    <h2 className="text-5xl font-bold mb-8">
+                    <h2 className="text-5xl font-bold mb-8 !text-white">
                         Creating New Ways To Connect With Culture
                     </h2>
 

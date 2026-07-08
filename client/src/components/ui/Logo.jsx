@@ -19,11 +19,18 @@ export default function Logo({ light = false }) {
                     ZED SPEAK
                 </h2>
 
-                <p
-                    className={`text-xs tracking-wider ${light ? "text-white/80" : "text-[#D71E0F]"
-                        }`}
-                >
-                    Culture, But Different.
+                <p className="text-xs tracking-wider font-medium">
+                    <span className={light ? "text-white" : "text-[#015A1F]"}>
+                        Culture
+                    </span>
+
+                    <span className={light ? "text-white/80" : "text-[#D71E0F]"}>
+                        {" "}But{" "}
+                    </span>
+
+                    <span className={light ? "text-white" : "text-[#F59E0B]"}>
+                        Different.
+                    </span>
                 </p>
 
             </div>
