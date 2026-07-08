@@ -223,7 +223,19 @@ export default function Home() {
 
                     <p className="uppercase tracking-[0.35em] text-[#015A1F] font-semibold mb-4">
 
-                        Culture, But Different
+                        <span className="text-[#015A1F]">
+                            Culture,
+                        </span>
+
+                        <br />
+
+                        <span className="text-[#D71E0F]">
+                            But
+                        </span>{" "}
+
+                        <span className="text-[#F59E0B]">
+                            Different.
+                        </span>
 
                     </p>
 
@@ -233,9 +245,9 @@ export default function Home() {
 
                     </h2>
 
-                    <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-10 text-left">
+                    <div className="max-w-5xl mx-auto">
 
-                        <p>
+                        <p className="text-center text-lg leading-relaxed text-black/70">
 
                             Zed Speak is a cultural experiences,
                             storytelling and heritage ecosystem helping
@@ -247,8 +259,8 @@ export default function Home() {
 
                     </div>
 
-                    <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-10 text-left">
-                        <p>
+                    <div className="max-w-5xl mx-auto">
+                        <p className="text-center text-lg leading-relaxed text-black/70">
 
                             Through experiences, programmes,
                             storytelling, community and future products,
