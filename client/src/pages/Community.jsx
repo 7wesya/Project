@@ -176,7 +176,7 @@ export default function Community() {
 
                 <div className="max-w-5xl mx-auto text-center">
 
-                    <h2 className="text-5xl font-bold mb-6">
+                    <h2 className="text-5xl font-bold mb-6 !text-white">
                         Culture Lives Through People
                     </h2>
 

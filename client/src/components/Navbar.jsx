@@ -8,13 +8,13 @@ export default function Navbar() {
 
     const links = [
         { name: "Home", path: "/" },
-        { name: "Experiences", path: "/experiences" },
-        { name: "Stories", path: "/stories" },
-        { name: "Programmes", path: "/programmes" },
-        { name: "Community", path: "/community" },
-        { name: "Products", path: "/products" },
-        { name: "Partnerships", path: "/partnerships" },
         { name: "About", path: "/about" },
+        { name: "Experiences", path: "/experiences" },
+        { name: "Programmes", path: "/programmes" },
+        { name: "Stories", path: "/stories" },
+        { name: "Community", path: "/community" },
+        { name: "Partnerships", path: "/partnerships" },
+        { name: "Products", path: "/products" },
         { name: "Contact", path: "/contact" },
     ];
 
@@ -51,8 +51,8 @@ export default function Navbar() {
 
                                         <span
                                             className={`mt-1 h-[2px] rounded-full bg-[#D71E0F] transition-all duration-300 ${isActive
-                                                    ? "w-full"
-                                                    : "w-0"
+                                                ? "w-full"
+                                                : "w-0"
                                                 }`}
                                         />
 
@@ -83,8 +83,8 @@ export default function Navbar() {
 
             <div
                 className={`fixed inset-0 bg-[#F8F4EE] z-[100] transition-transform duration-500 ${menuOpen
-                        ? "translate-x-0"
-                        : "translate-x-full"
+                    ? "translate-x-0"
+                    : "translate-x-full"
                     }`}
             >
 
