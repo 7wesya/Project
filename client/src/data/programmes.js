@@ -1,9 +1,12 @@
+import cultureLab from "../assets/images/programmes/Cultural Lab.jpg";
+import keepOurLanguages from "../assets/images/programmes/Keep our languages.jpg";
+import beneathTheChitenge from "../assets/images/programmes/Beneath the Chitenge.jpg";
 const programmes = [
     {
         id: "culture-lab",
         title: "Culture Lab",
         tagline: "Creativity • Innovation • Culture • Future Thinking",
-        image: null,
+        image: cultureLab,
         description:
             "A future-focused cultural innovation experience exploring how culture evolves, adapts and remains relevant in a changing world.",
         details: {
@@ -25,7 +28,7 @@ const programmes = [
         id: "keep-our-languages-alive",
         title: "Keep Our Languages Alive",
         tagline: "Language • Heritage • Storytelling • Community",
-        image: null,
+        image: keepOurLanguages,
         description:
             "An interactive cultural experience encouraging children, families and communities to celebrate, use and preserve Zambia’s rich linguistic heritage.",
         details: {
@@ -48,7 +51,7 @@ const programmes = [
         id: "beneath-the-chitenge-circle",
         title: "Beneath the Chitenge Circle",
         tagline: "Storytelling • Reflection • Identity • Creative Expression",
-        image: null,
+        image: beneathTheChitenge,
         description:
             "A thoughtfully curated cultural storytelling and creative expression experience inviting women to explore identity, culture, belonging and memory.",
         details: {

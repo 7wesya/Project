@@ -1,5 +1,9 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import heroImage from "../assets/images/home/Hero.jpg";
+import experienceCulture from "../assets/images/home/Experience Culture.jpg";
+import preserveCulture from "../assets/images/home/Preserve Culture.jpg";
+import reimagineCulture from "../assets/images/home/Reimagine Culture.jpg";
 import Button from "../components/ui/Button";
 import Card from "../components/ui/Card";
 import Container from "../components/ui/Container";
@@ -10,21 +14,24 @@ export default function Home() {
     const pillars = [
         {
             title: "Experience Culture",
+            image: experienceCulture,
+            label: "Experience Culture",
             description:
-                "Interactive experiences, games, conversations, food and cultural journeys that bring people together.",
-            label: "Experience Culture Image",
+                "Interactive experiences, games, conversations and cultural journeys.",
         },
         {
             title: "Preserve Culture",
+            image: preserveCulture,
+            label: "Preserve Culture",
             description:
-                "Stories, languages, traditions, heritage and cultural knowledge shared across generations.",
-            label: "Preserve Culture Image",
+                "Stories, languages, heritage and cultural knowledge.",
         },
         {
             title: "Reimagine Culture",
+            image: reimagineCulture,
+            label: "Reimagine Culture",
             description:
-                "Creativity, innovation, technology and new ideas shaping the future of Zambian culture.",
-            label: "Reimagine Culture Image",
+                "Creativity, innovation, technology and future culture.",
         },
     ];
 
@@ -99,7 +106,7 @@ export default function Home() {
                     <div className="relative">
 
                         <PlaceholderImage
-                            image={null}
+                            image={heroImage}
                             label="Hero Image"
                         />
 
@@ -310,7 +317,7 @@ export default function Home() {
                             <Card key={pillar.title}>
 
                                 <PlaceholderImage
-                                    image={null}
+                                    image={pillar.image}
                                     label={pillar.label}
                                 />
 

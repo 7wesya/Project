@@ -1,7 +1,9 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-
+import experienceCulture from "../assets/images/home/Experience Culture.jpg";
+import preserveCulture from "../assets/images/home/Preserve Culture.jpg";
+import reimagineCulture from "../assets/images/home/Reimagine Culture.jpg";
 import Container from "../components/ui/Container";
 import Section from "../components/ui/Section";
 import SectionTitle from "../components/ui/SectionTitle";
@@ -12,16 +14,22 @@ export default function About() {
     const pillars = [
         {
             title: "Experience Culture",
+            image: experienceCulture,
+            label: "Experience Culture",
             description:
                 "Participate in experiences that bring culture to life through conversation, storytelling, games, food, heritage and community.",
         },
         {
             title: "Preserve Culture",
+            image: preserveCulture,
+            label: "Preserve Culture",
             description:
                 "Celebrate and pass on stories, languages, traditions, heritage and cultural knowledge for future generations.",
         },
         {
             title: "Reimagine Culture",
+            image: reimagineCulture,
+            label: "Reimagine Culture",
             description:
                 "Explore how culture evolves through creativity, innovation, technology and new ways of thinking.",
         },
@@ -187,8 +195,8 @@ export default function About() {
                         {pillars.map((pillar) => (
                             <Card key={pillar.title}>
                                 <PlaceholderImage
-                                    image={null}
-                                    label={pillar.title}
+                                    image={pillar.image}
+                                    label={pillar.label}
                                 />
 
                                 <div className="p-8">

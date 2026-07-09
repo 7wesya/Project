@@ -1,10 +1,14 @@
 
+import zedTable from "../assets/images/experiences/Zed Table.jpg";
+import kidsCulturalExplorers from "../assets/images/experiences/Kids Cultural Explorers.jpg";
+import rootsAndRoutes from "../assets/images/experiences/Roots & Routes.jpg";
+import cookAndConnect from "../assets/images/experiences/Cook & Connect.jpg";
 const experiences = [
     {
         id: "zed-table",
         title: "The Zed Table",
         tagline: "Conversation • Games • Food • Connection",
-        image: null,
+        image: zedTable,
         description:
             "Zed Speak’s flagship cultural experience series, bringing people together to experience culture in contemporary, engaging and meaningful ways.",
         details: {
@@ -32,7 +36,7 @@ const experiences = [
         id: "kids-cultural-explorers",
         title: "Kids Cultural Explorers",
         tagline: "Play • Storytelling • Language • Discovery",
-        image: null,
+        image: kidsCulturalExplorers,
         description:
             "An interactive cultural experience inviting children to discover Zambia through play, storytelling, language, music, creativity and hands-on exploration.",
         details: {
@@ -55,7 +59,7 @@ const experiences = [
         id: "roots-and-routes",
         title: "Roots & Routes",
         tagline: "Explore • Heritage • Storytelling • Place",
-        image: null,
+        image: rootsAndRoutes,
         description:
             "An interactive cultural exploration experience that invites participants to discover Zambia through its communities, traditions, heritage, landscapes and local stories.",
         details: {
@@ -76,7 +80,7 @@ const experiences = [
         id: "cook-and-connect",
         title: "Cook & Connect",
         tagline: "Food • Storytelling • Tradition • Community",
-        image: null,
+        image: cookAndConnect,
         description:
             "An interactive culinary and cultural experience where food becomes a gateway to conversation, storytelling and connection.",
         details: {
