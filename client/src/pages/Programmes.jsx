@@ -37,7 +37,7 @@ export default function Programmes() {
             <Section className="pt-0">
                 <Container>
 
-                    <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+                    <div className="grid md:grid-cols-2 gap-8">
                         {programmes.map((programme) => (
                             <Card key={programme.id}>
                                 {/* Image Placeholder */}

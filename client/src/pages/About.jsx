@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import team from "../data/team";
 import experienceCulture from "../assets/images/home/Experience Culture.jpg";
 import preserveCulture from "../assets/images/home/Preserve Culture.jpg";
 import reimagineCulture from "../assets/images/home/Reimagine Culture.jpg";
@@ -32,24 +33,6 @@ export default function About() {
             label: "Reimagine Culture",
             description:
                 "Explore how culture evolves through creativity, innovation, technology and new ways of thinking.",
-        },
-    ];
-
-    const teamMembers = [
-        {
-            name: "Team Member Name",
-            role: "Founder / Role",
-            bio: "Short bio about this team member, their background, and how they contribute to Zed Speak.",
-        },
-        {
-            name: "Team Member Name",
-            role: "Programme / Creative Lead",
-            bio: "Short bio about this team member, their background, and how they contribute to Zed Speak.",
-        },
-        {
-            name: "Team Member Name",
-            role: "Community / Partnerships",
-            bio: "Short bio about this team member, their background, and how they contribute to Zed Speak.",
         },
     ];
 
@@ -362,27 +345,30 @@ export default function About() {
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
-                        {teamMembers.map((member, index) => (
-                            <Card key={`${member.name}-${index}`}>
+                        {team.map((member) => (
+                            <Card key={member.id}>
+
                                 <PlaceholderImage
-                                    image={null}
+                                    image={member.image}
                                     label={member.name}
                                 />
 
-
                                 <div className="p-8">
-                                    <h3 className="text-2xl font-bold text-[#2F4F3E] mb-2">
+
+                                    <h3 className="text-2xl font-bold text-[#015A1F] mb-2">
                                         {member.name}
                                     </h3>
 
-                                    <p className="text-[#7A4B2A] font-medium mb-4">
+                                    <p className="text-[#D71E0F] font-medium mb-4">
                                         {member.role}
                                     </p>
 
-                                    <p className="text-black/70 leading-relaxed">
+                                    <p className="text-[#0F0F0E]/70 leading-relaxed">
                                         {member.bio}
                                     </p>
+
                                 </div>
+
                             </Card>
                         ))}
                     </div>

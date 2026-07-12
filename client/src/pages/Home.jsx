@@ -110,6 +110,7 @@ export default function Home() {
                             label="Hero Image"
                         />
 
+                        {/* Just keep it. It is for the text found inside the picture on the home page. 
                         <div className="absolute bottom-8 left-8 bg-white rounded-3xl p-6 shadow-xl">
 
                             <p className="uppercase text-xs tracking-[0.3em] text-[#015A1F] mb-2">
@@ -124,7 +125,7 @@ export default function Home() {
                                 Reimagine.
                             </h3>
 
-                        </div>
+                        </div> */}
 
                     </div>
 

@@ -1,5 +1,6 @@
 import cultureLab from "../assets/images/programmes/Cultural Lab.jpg";
 import keepOurLanguages from "../assets/images/programmes/Keep our languages.jpg";
+import kidsCulturalExplorers from "../assets/images/programmes/Kids Cultural Explorers.jpg";
 import beneathTheChitenge from "../assets/images/programmes/Beneath the Chitenge.jpg";
 const programmes = [
     {
@@ -48,26 +49,49 @@ const programmes = [
         },
     },
     {
-        id: "beneath-the-chitenge-circle",
-        title: "Beneath the Chitenge Circle",
-        tagline: "Storytelling • Reflection • Identity • Creative Expression",
-        image: beneathTheChitenge,
+        id: "kids-cultural-explorers",
+        title: "Kids Cultural Explorers",
+        tagline: "Play • Storytelling • Language • Discovery",
+        image: kidsCulturalExplorers,
         description:
-            "A thoughtfully curated cultural storytelling and creative expression experience inviting women to explore identity, culture, belonging and memory.",
+            "An interactive cultural experience inviting children to discover Zambia through play, storytelling, language, music, creativity and hands-on exploration.",
         details: {
             about:
-                "Beneath the Chitenge Circle is a thoughtfully curated cultural storytelling and creative expression experience that invites women to explore identity, culture, belonging, memory, and the journeys that shape who they are. Inspired by the symbolism of the chitenge, each gathering creates a safe and welcoming space for honest conversations, shared experiences, reflection, and creative storytelling through words, art, photography, poetry, music, and other forms of expression.",
+                "Kids Cultural Explorers is an interactive cultural experience that invites children to discover Zambia through play, storytelling, language, music, creativity, and hands-on exploration. Each adventure introduces young explorers to the richness of Zambia's cultures, traditions, heritage, and everyday life through engaging activities designed to spark curiosity, confidence, and connection.",
             duration:
                 "6 Weeks\nOne 90-minute guided storytelling circle each week",
-            audience:
-                "Women, Community Groups, Organisations, Creative Networks & Wellness Communities",
+            audience: "Children between the ages of 6–15",
             expect: [
-                "Guided storytelling and reflective conversations",
-                "Creative expression through poetry, writing, art, photography, music and other mediums",
-                "Thought-provoking prompts inspired by culture and lived experiences",
-                "A safe, supportive, and confidential storytelling circle",
-                "Opportunities to connect, listen, create, and preserve personal and collective stories",
-                "Optional contributions to collective storytelling projects and publications",
+                "Play and cultural games",
+                "Stories and imagination",
+                "Music and movement",
+                "Arts and creativity",
+                "Language and discovery",
+                "Team adventures",
+            ],
+        },
+    },
+    {
+        id: "beneath-the-chitenge-circle",
+        title: "Beneath the Chitenge Circle",
+        tagline: "Storytelling • Interactive Activities • Creativity • Shared Experiences",
+        image: beneathTheChitenge,
+        description:
+            "A six-week cultural experience where women connect through storytelling, creativity and shared experiences to discover, preserve, reimagine and create culture together.",
+        details: {
+            about:
+                "Beneath the Chitenge Circle is a six week cultural experience for women that explores identity, belonging and culture through creativity, curiosity and participation. The programme invites women to move beyond simply talking about culture to actively discovering, experiencing, preserving, reimagining and creating it. Through interactive challenges, creative expression and shared experiences, participants are encouraged to see culture differently while exploring how it shapes their lives and how they, in turn, can shape its future. Whether through storytelling, cultural discovery, art, games or collaborative experiences, each session offers a welcoming space to connect, reflect and celebrate culture in contemporary and meaningful ways.",
+            duration:
+                "6 Weeks\n 1 Hour 30 Minutes",
+            audience:
+                "Women",
+            expect: [
+                "Interactive cultural experiences and creative challenges",
+                "Storytelling, art and collaborative activities",
+                "Opportunities to discover culture through people, places and everyday life",
+                "Hands on experiences that encourage participation rather than observation",
+                "Creative sessions exploring how culture can be preserved and reimagined",
+                "Space to reflect, create and celebrate culture together",
             ],
         },
     },

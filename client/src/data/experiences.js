@@ -1,6 +1,6 @@
 
 import zedTable from "../assets/images/experiences/Zed Table.jpg";
-import kidsCulturalExplorers from "../assets/images/experiences/Kids Cultural Explorers.jpg";
+import cultureButDifferent from "../assets/images/experiences/Culture but different.jpg";
 import rootsAndRoutes from "../assets/images/experiences/Roots & Routes.jpg";
 import cookAndConnect from "../assets/images/experiences/Cook & Connect.jpg";
 const experiences = [
@@ -33,25 +33,27 @@ const experiences = [
         },
     },
     {
-        id: "kids-cultural-explorers",
-        title: "Kids Cultural Explorers",
-        tagline: "Play • Storytelling • Language • Discovery",
-        image: kidsCulturalExplorers,
+        id: "culture-but-different",
+        title: "Culture, But Different: The Experience",
+        tagline: "Discover • Experience • Preserve • Reimagine",
+        image: cultureButDifferent,
         description:
-            "An interactive cultural experience inviting children to discover Zambia through play, storytelling, language, music, creativity and hands-on exploration.",
+            "A five-week interactive cultural journey that helps participants discover, experience, preserve and reimagine culture through immersive activities, storytelling and creative challenges.",
         details: {
             about:
-                "Kids Cultural Explorers is an interactive cultural experience that invites children to discover Zambia through play, storytelling, language, music, creativity, and hands-on exploration. Each adventure introduces young explorers to the richness of Zambia's cultures, traditions, heritage, and everyday life through engaging activities designed to spark curiosity, confidence, and connection.",
+                "Culture, But Different: The Experience is a five-week interactive cultural journey designed to help participants experience culture in fresh, unexpected and meaningful ways. Rather than learning about culture through lectures or observation, participants actively discover, experience, preserve and reimagine culture through interactive challenges, creative activities, collaborative games and shared experiences. From solving cultural quests and decoding traditions through the five senses to preserving culture through art and reimagining traditions for future generations, each week offers a different way of engaging with culture. Whether you arrive knowing a lot about culture or very little, the experience invites you to see familiar traditions, stories and everyday life through a completely different lens.",
             duration:
-                "6 Weeks\nOne 90-minute guided storytelling circle each week",
-            audience: "Children between the ages of 6–15",
-            exploreThrough: [
-                "Play and cultural games",
-                "Stories and imagination",
-                "Music and movement",
-                "Arts and creativity",
-                "Language and discovery",
-                "Team adventures",
+                "5 Weeks\nOne two-hour interactive cultural experience each week.",
+            audience:
+                "Young Adults, Adults, Individuals Curious About Culture, Community Groups, Corporate Teams, Schools & Universities, Creative Communities & Organisations Seeking Meaningful Team Experiences",
+            expect: [
+                "Interactive cultural games and challenges",
+                "Storytelling with unexpected twists",
+                "A live cultural discovery quest",
+                "The Five Senses Challenge",
+                "Collaborative art experiences",
+                "Future-focused cultural design challenges",
+                "Opportunities to connect with others through shared experiences",
             ],
         },
     },
