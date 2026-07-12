@@ -348,10 +348,13 @@ export default function About() {
                         {team.map((member) => (
                             <Card key={member.id}>
 
-                                <PlaceholderImage
-                                    image={member.image}
-                                    label={member.name}
-                                />
+                                <div className="bg-[#F8F4EE] rounded-t-[32px] flex items-center justify-center p-6">
+                                    <img
+                                        src={member.image}
+                                        alt={member.name}
+                                        className="h-80 w-auto object-contain"
+                                    />
+                                </div>
 
                                 <div className="p-8">
 
