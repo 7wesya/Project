@@ -166,7 +166,7 @@ export default function Home() {
                         <Card className="text-center p-8">
 
                             <h2 className="text-5xl font-bold text-[#015A1F] mb-3">
-                                3
+                                4
                             </h2>
 
                             <p className="font-semibold text-lg">
