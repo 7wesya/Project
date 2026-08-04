@@ -35,15 +35,6 @@ export default function Home() {
         },
     ];
 
-    const gallery = [
-        "Experience Photo",
-        "Storytelling",
-        "Community",
-        "Culture",
-        "Heritage",
-        "Events",
-    ];
-
     return (
         <div className="bg-gradient-to-b from-[#F8F4EE] via-white to-[#F8F4EE] min-h-screen animate-fadeIn">
 
@@ -139,84 +130,6 @@ export default function Home() {
 
             </div>
 
-            {/* Platform At A Glance */}
-
-            <Section>
-
-                <Container>
-
-                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-
-                        <Card className="text-center p-8">
-
-                            <h2 className="text-5xl font-bold text-[#015A1F] mb-3">
-                                4
-                            </h2>
-
-                            <p className="font-semibold text-lg">
-                                Experiences
-                            </p>
-
-                            <p className="text-sm text-[#0F0F0E]/60 mt-2">
-                                Interactive cultural experiences
-                            </p>
-
-                        </Card>
-
-                        <Card className="text-center p-8">
-
-                            <h2 className="text-5xl font-bold text-[#015A1F] mb-3">
-                                4
-                            </h2>
-
-                            <p className="font-semibold text-lg">
-                                Programmes
-                            </p>
-
-                            <p className="text-sm text-[#0F0F0E]/60 mt-2">
-                                Learning and community initiatives
-                            </p>
-
-                        </Card>
-
-                        <Card className="text-center p-8">
-
-                            <h2 className="text-5xl font-bold text-[#015A1F] mb-3">
-                                6
-                            </h2>
-
-                            <p className="font-semibold text-lg">
-                                Story Themes
-                            </p>
-
-                            <p className="text-sm text-[#0F0F0E]/60 mt-2">
-                                Culture, identity and heritage
-                            </p>
-
-                        </Card>
-
-                        <Card className="text-center p-8">
-
-                            <h2 className="text-5xl font-bold text-[#015A1F] mb-3">
-                                ∞
-                            </h2>
-
-                            <p className="font-semibold text-lg">
-                                Possibilities
-                            </p>
-
-                            <p className="text-sm text-[#0F0F0E]/60 mt-2">
-                                We're just getting started
-                            </p>
-
-                        </Card>
-
-                    </div>
-
-                </Container>
-
-            </Section>
-
             <div className="max-w-7xl mx-auto px-6">
 
                 <div className="border-t border-[#015A1F]/10"></div>
@@ -257,150 +170,19 @@ export default function Home() {
 
                         <p className="text-center text-lg leading-relaxed text-black/70">
 
-                            Zed Speak is a cultural experiences,
-                            storytelling and heritage ecosystem helping
-                            people experience, preserve and reimagine
-                            Zambian culture in meaningful and contemporary
-                            ways.
+                            Zed Speak is a culture-focused organisation
+                            creating interactive experiences that help people
+                            experience, preserve and reimagine Zambain culture.
 
                         </p>
 
-                    </div>
-
-                    <div className="max-w-5xl mx-auto">
-                        <p className="text-center text-lg leading-relaxed text-black/70">
-
-                            Through experiences, programmes,
-                            storytelling, community and future products,
-                            we create opportunities for people to connect
-                            with culture, celebrate identity and imagine
-                            what culture can become.
-
-                        </p>
                     </div>
 
                 </Container >
 
             </Section >
 
-            <div className="max-w-7xl mx-auto px-6">
 
-                <div className="border-t border-[#015A1F]/10"></div>
-
-            </div>
-
-            {/* The Three Pillars */}
-
-            < Section >
-
-                <Container>
-
-                    <div className="text-center mb-16">
-
-                        <p className="uppercase tracking-[0.35em] text-[#015A1F] font-semibold mb-4">
-
-                            Our Approach
-
-                        </p>
-
-                        <h2 className="text-5xl font-bold text-[#015A1F]">
-
-                            Experience • Preserve • Reimagine
-
-                        </h2>
-
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-8">
-
-                        {pillars.map((pillar) => (
-
-                            <Card key={pillar.title}>
-
-                                <PlaceholderImage
-                                    image={pillar.image}
-                                    label={pillar.label}
-                                />
-
-                                <div className="p-8">
-
-                                    <h3 className="text-3xl font-bold text-[#015A1F] mb-4">
-
-                                        {pillar.title}
-
-                                    </h3>
-
-                                    <p className="text-[#0F0F0E]/70 leading-relaxed">
-
-                                        {pillar.description}
-
-                                    </p>
-
-                                </div>
-
-                            </Card>
-
-                        ))}
-
-                    </div>
-
-                </Container>
-
-            </Section >
-
-            <div className="max-w-7xl mx-auto px-6">
-
-                <div className="border-t border-[#015A1F]/10"></div>
-
-            </div>
-
-            {/* Through the Zed Speak Lens */}
-            < Section className="bg-white" >
-
-                <Container>
-
-                    <div className="text-center mb-16">
-
-                        <p className="uppercase tracking-[0.35em] text-[#015A1F] font-semibold mb-4">
-                            Moments That Tell Our Story
-                        </p>
-
-                        <h2 className="text-5xl font-bold text-[#015A1F] mb-6">
-                            Through The Zed Speak Lens
-                        </h2>
-
-                        <p className="max-w-3xl mx-auto text-lg text-[#0F0F0E]/75 leading-relaxed">
-                            Every experience, programme and conversation creates moments worth
-                            remembering. This gallery will showcase the people, places and
-                            stories that continue to shape the Zed Speak journey.
-                        </p>
-
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                        {gallery.map((item, index) => (
-
-                            <Card
-                                key={item}
-                                className={`${index % 2 !== 0 ? "md:mt-10" : ""}`}
-                            >
-
-                                <PlaceholderImage
-                                    image={null}
-                                    label={item}
-                                />
-
-                            </Card>
-
-                        ))}
-
-                    </div>
-
-                </Container>
-
-
-            </Section >
             <div className="max-w-7xl mx-auto px-6">
 
                 <div className="border-t border-[#015A1F]/10"></div>
@@ -409,11 +191,11 @@ export default function Home() {
 
             {/* Get Involved */}
 
-            < Section className="bg-[#015A1F] text-white" >
+            <Section className="bg-[#015A1F] text-white">
 
                 <Container>
 
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-20">
 
                         <p className="uppercase tracking-[0.35em] text-white/70 mb-4">
                             Join The Movement
@@ -423,7 +205,7 @@ export default function Home() {
                             There Are Many Ways To Get Involved
                         </h2>
 
-                        <p className="max-w-3xl mx-auto text-lg text-white/80">
+                        <p className="max-w-3xl mx-auto text-lg text-white/80 leading-relaxed">
                             Whether you're attending an experience, partnering with us,
                             sharing your story or helping preserve culture, there's a place
                             for you within the Zed Speak community.
@@ -431,22 +213,30 @@ export default function Home() {
 
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-8">
 
-                        <Card className="p-8 text-center">
+                    <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
 
-                            <div className="text-5xl mb-6">
-                                🎭
+                        <Card className="p-10 text-center flex flex-col items-center justify-between min-h-[420px]">
+
+                            <div>
+
+                                <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#F8F4EE] flex items-center justify-center text-5xl">
+                                    🎭
+                                </div>
+
+                                <h3 className="text-3xl font-bold text-[#015A1F] mb-5">
+                                    Attend Experiences
+                                </h3>
+
+                                <p className="text-[#0F0F0E]/70 leading-relaxed max-w-sm mx-auto">
+                                    Discover conversations, storytelling,
+                                    food, games and cultural experiences
+                                    designed to help you connect with culture
+                                    in meaningful ways.
+                                </p>
+
                             </div>
 
-                            <h3 className="text-2xl font-bold text-[#015A1F] mb-4">
-                                Attend Experiences
-                            </h3>
-
-                            <p className="text-[#0F0F0E]/70 mb-8">
-                                Discover conversations, storytelling,
-                                food, games and cultural experiences.
-                            </p>
 
                             <Button to="/experiences">
                                 Explore
@@ -454,44 +244,28 @@ export default function Home() {
 
                         </Card>
 
-                        <Card className="p-8 text-center">
 
-                            <div className="text-5xl mb-6">
-                                🤝
+
+                        <Card className="p-10 text-center flex flex-col items-center justify-between min-h-[420px]">
+
+                            <div>
+
+                                <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#F8F4EE] flex items-center justify-center text-5xl">
+                                    ❤️
+                                </div>
+
+                                <h3 className="text-3xl font-bold text-[#015A1F] mb-5">
+                                    Join The Community
+                                </h3>
+
+                                <p className="text-[#0F0F0E]/70 leading-relaxed max-w-sm mx-auto">
+                                    Stay connected, share your voice and help
+                                    shape the future of Zed Speak through
+                                    culture, creativity and collaboration.
+                                </p>
+
                             </div>
 
-                            <h3 className="text-2xl font-bold text-[#015A1F] mb-4">
-                                Partner With Us
-                            </h3>
-
-                            <p className="text-[#0F0F0E]/70 mb-8">
-                                Collaborate with us to create
-                                meaningful cultural impact.
-                            </p>
-
-                            <Button
-                                variant="secondary"
-                                to="/partnerships"
-                            >
-                                Learn More
-                            </Button>
-
-                        </Card>
-
-                        <Card className="p-8 text-center">
-
-                            <div className="text-5xl mb-6">
-                                ❤️
-                            </div>
-
-                            <h3 className="text-2xl font-bold text-[#015A1F] mb-4">
-                                Join The Community
-                            </h3>
-
-                            <p className="text-[#0F0F0E]/70 mb-8">
-                                Stay connected and help shape
-                                the future of Zed Speak.
-                            </p>
 
                             <Button
                                 variant="accent"
@@ -502,11 +276,13 @@ export default function Home() {
 
                         </Card>
 
+
                     </div>
+
 
                 </Container>
 
-            </Section >
+            </Section>
 
 
             <div className="max-w-7xl mx-auto px-6">

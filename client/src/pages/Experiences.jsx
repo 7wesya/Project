@@ -23,9 +23,9 @@ export default function Experiences() {
                 <Container>
 
                     <SectionTitle
-                        subtitle="Cultural Experiences"
+                        subtitle="Experiences & Programmes"
                         title="Experience Culture Differently"
-                        description="Interactive cultural experiences designed to bring people together through conversation, storytelling, food, play, exploration and meaningful connection."
+                        description="Discover interactive cultural experiences and immersive programmes designed to help people experience, preserve and reimagine Zambian culture."
                     />
 
                 </Container>
@@ -49,6 +49,14 @@ export default function Experiences() {
                                 />
 
                                 <div className="p-8">
+                                    <span
+                                        className={`inline-block mb-4 px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wide ${experience.type === "programme"
+                                            ? "bg-[#D71E0F] text-white"
+                                            : "bg-[#015A1F] text-white"
+                                            }`}
+                                    >
+                                        {experience.type === "programme" ? "Programme" : "Experience"}
+                                    </span>
                                     <p className="uppercase tracking-widest text-sm text-[#7A4B2A] mb-3">
                                         {experience.tagline}
                                     </p>
@@ -66,7 +74,7 @@ export default function Experiences() {
                                         <div className="mt-8 pt-6 border-t border-[#015A1F]/15border-t border-gray-200 space-y-6">
                                             <div>
                                                 <h3 className="text-xl font-bold text-[#2F4F3E] mb-3">
-                                                    About This Experience
+                                                    About This {experience.type === "programme" ? "Programme" : "Experience"}
                                                 </h3>
                                                 <p className="text-black/70 leading-relaxed">
                                                     {experience.details.about}
@@ -124,7 +132,9 @@ export default function Experiences() {
                                             {experience.details.formats && (
                                                 <div>
                                                     <h3 className="text-xl font-bold text-[#2F4F3E] mb-3">
-                                                        Experience Formats
+                                                        {experience.type === "programme"
+                                                            ? "Programme Structure"
+                                                            : "Experience Formats"}
                                                     </h3>
 
                                                     <ul className="space-y-3 text-black/70">
@@ -142,7 +152,9 @@ export default function Experiences() {
                                             to={`/booking/${experience.id}`}
                                             className="bg-[#015A1F] text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition"
                                         >
-                                            Book Now
+                                            {experience.type === "programme"
+                                                ? "Join Programme"
+                                                : "Book Experience"}
                                         </Link>
 
                                         <button
@@ -177,7 +189,7 @@ export default function Experiences() {
                     </h2>
 
                     <p className="text-xl text-white/80 leading-relaxed">
-                        Our experiences are designed to make culture active, social and
+                        Our experiences and programmes are designed to make culture active, social and
                         memorable, creating spaces where people can learn, connect,
                         celebrate identity and engage with Zambia in meaningful ways.
                     </p>
@@ -188,7 +200,7 @@ export default function Experiences() {
             <section className="py-24 px-6">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-5xl font-bold text-center mb-16 text-[#2F4F3E]">
-                        Private and Custom Experiences
+                        Private and Custom Experiences & Programmes
                     </h2>
 
                     <div className="grid md:grid-cols-3 gap-8">
@@ -198,7 +210,7 @@ export default function Experiences() {
                             </h3>
 
                             <p className="text-black/70 leading-relaxed">
-                                Book a Zed Speak experience for birthdays, family gatherings,
+                                Book a Zed Speak experience and programme for birthdays, family gatherings,
                                 intimate celebrations or private cultural moments designed
                                 around your group.
                             </p>
@@ -206,24 +218,25 @@ export default function Experiences() {
 
                         <div className="bg-white rounded-[32px] p-8 shadow-sm">
                             <h3 className="text-2xl font-bold mb-4 text-[#2F4F3E]">
-                                Team Experiences
+                                Team Experiences & Programmes
                             </h3>
 
                             <p className="text-black/70 leading-relaxed">
                                 Create meaningful team-building moments through cultural
                                 games, storytelling, food, reflection and shared experiences
+                                and programmes
                                 tailored for organisations and groups.
                             </p>
                         </div>
 
                         <div className="bg-white rounded-[32px] p-8 shadow-sm">
                             <h3 className="text-2xl font-bold mb-4 text-[#2F4F3E]">
-                                Custom Experiences
+                                Custom Experiences & Programmes
                             </h3>
 
                             <p className="text-black/70 leading-relaxed">
                                 Looking for something unique? We can design a custom
-                                experience around your audience, occasion, theme or learning goals.
+                                experience and programme around your audience, occasion, theme or learning goals.
                             </p>
                         </div>
                     </div>
@@ -238,7 +251,7 @@ export default function Experiences() {
 
                 <p className="text-lg text-black/70 max-w-3xl mx-auto mb-8 leading-relaxed">
                     Zed Speak designs and facilitates private and custom cultural
-                    experiences for families, schools, organisations, community groups,
+                    experiences and programmes for families, schools, organisations, community groups,
                     corporate teams and special occasions.
                 </p>
 

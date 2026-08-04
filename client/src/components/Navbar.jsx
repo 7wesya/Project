@@ -10,11 +10,8 @@ export default function Navbar() {
         { name: "Home", path: "/" },
         { name: "About", path: "/about" },
         { name: "Experiences", path: "/experiences" },
-        { name: "Programmes", path: "/programmes" },
         { name: "Stories", path: "/stories" },
-        { name: "Community", path: "/community" },
-        { name: "Partnerships", path: "/partnerships" },
-        { name: "Products", path: "/products" },
+        { name: "Shop", path: "/shop" },
         { name: "Contact", path: "/contact" },
     ];
 
@@ -90,7 +87,9 @@ export default function Navbar() {
 
                 <div className="flex items-center justify-between p-6 border-b">
 
-                    <Logo />
+                    <Link to="/" onClick={() => setMenuOpen(false)}>
+                        <Logo />
+                    </Link>
 
                     <button
                         onClick={() => setMenuOpen(false)}
@@ -122,9 +121,11 @@ export default function Navbar() {
 
                     <div className="pt-6">
 
-                        <Button to="/join-journey">
-                            Join The Journey
-                        </Button>
+                        <div onClick={() => setMenuOpen(false)}>
+                            <Button to="/join-journey">
+                                Join The Journey
+                            </Button>
+                        </div>
 
                     </div>
 

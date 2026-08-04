@@ -6,14 +6,11 @@ export default function Footer() {
         { name: "Home", path: "/" },
         { name: "About", path: "/about" },
         { name: "Experiences", path: "/experiences" },
-        { name: "Programmes", path: "/programmes" },
         { name: "Stories", path: "/stories" },
     ];
 
     const communityLinks = [
-        { name: "Community", path: "/community" },
-        { name: "Partnerships", path: "/partnerships" },
-        { name: "Products", path: "/products" },
+        { name: "Shop", path: "/shop" },
         { name: "Join The Journey", path: "/join-journey" },
         { name: "Contact", path: "/contact" },
     ];

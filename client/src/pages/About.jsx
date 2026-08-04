@@ -52,18 +52,7 @@ export default function About() {
             <Navbar />
 
             {/* Hero */}
-            <Section className="pt-36">
-
-                <Container>
-
-                    <SectionTitle
-                        subtitle="Culture, But Different."
-                        title="About Zed Speak"
-                        description="Zed Speak is a cultural experiences and storytelling ecosystem helping people experience, preserve and reimagine Zambian culture in meaningful, engaging and contemporary ways."
-                    />
-
-                </Container>
-
+            <Section className="pt-12">
             </Section>
 
             {/* Our Story */}
@@ -132,9 +121,8 @@ export default function About() {
                         </h3>
 
                         <p className="text-black/75 text-lg leading-relaxed">
-                            To become Zambia’s leading cultural experiences and storytelling
-                            ecosystem, inspiring people to connect with, celebrate and shape
-                            the future of Zambian culture.
+                            A Zambia where everyone is able to experience,
+                            preserve and reimagine culture.
                         </p>
                     </Card>
 
@@ -148,9 +136,8 @@ export default function About() {
                         </h3>
 
                         <p className="text-black/75 text-lg leading-relaxed">
-                            To help people experience, preserve and reimagine Zambian culture
-                            through storytelling, heritage, creativity, learning, connection,
-                            and contemporary ways of engaging with culture.
+                            To help people experience, preserve and reimagine
+                            Zambian culture through interactive cultural experiences.
                         </p>
                     </Card>
                 </div>
@@ -217,109 +204,10 @@ export default function About() {
                     <div className="flex flex-wrap justify-center gap-4">
                         <Link
                             to="/experiences"
-                            className="inline-block bg-white text-[#2F4F3E] px-8 py-4 rounded-full font-semibold hover:opacity-90 transition"
+                            className="inline-block border border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#2F4F3E] transition"
                         >
                             Explore Experiences
                         </Link>
-
-                        <Link
-                            to="/programmes"
-                            className="inline-block border border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#2F4F3E] transition"
-                        >
-                            Explore Programmes
-                        </Link>
-                    </div>
-                </div>
-            </section >
-
-            {/* Who We Serve */}
-            < section className="py-24 px-6" >
-                <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
-                            Who We Serve
-                        </p>
-
-                        <h2 className="text-5xl font-bold text-[#2F4F3E] mb-8">
-                            Building Spaces For Different Kinds Of Cultural Connection
-                        </h2>
-
-                        <p className="text-lg text-black/70 leading-relaxed mb-6">
-                            Zed Speak is for people who want to engage with culture in meaningful ways,
-                            whether they are reconnecting with heritage, learning something new,
-                            looking for creative cultural experiences, or building programmes and partnerships
-                            that strengthen community and identity.
-                        </p>
-
-                        <p className="text-lg text-black/70 leading-relaxed">
-                            We serve individuals, families, schools, creatives, organisations,
-                            communities and partners who believe culture should be lived, shared
-                            and continuously reimagined.
-                        </p>
-                    </div>
-
-                    <div className="grid sm:grid-cols-2 gap-6">
-                        {[
-                            "Young People & Families",
-                            "Schools & Educators",
-                            "Communities & Cultural Groups",
-                            "Artists & Storytellers",
-                            "Organisations & Teams",
-                            "Creative & Cultural Partners",
-                        ].map((group) => (
-                            <div
-                                key={group}
-                                className="bg-white rounded-[28px] p-6 shadow-sm"
-                            >
-                                <h3 className="text-xl font-semibold text-[#2F4F3E]">
-                                    {group}
-                                </h3>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section >
-
-            {/* Why Culture, But Different */}
-            < section className="bg-white py-24 px-6" >
-                <div className="max-w-5xl mx-auto text-center">
-                    <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
-                        Why “Culture, But Different?”
-                    </p>
-
-                    <h2 className="text-5xl font-bold text-[#2F4F3E] mb-8">
-                        Culture, But Different.
-                    </h2>
-
-                    <div className="space-y-6 text-lg text-black/75 leading-relaxed">
-                        <p>
-                            For us, this means approaching culture with curiosity,
-                            creativity and openness.
-                        </p>
-
-                        <p>
-                            It means creating new ways to experience old traditions.
-                        </p>
-
-                        <p>
-                            It means preserving what matters while embracing change.
-                        </p>
-
-                        <p>
-                            It means recognising that culture is both heritage and possibility.
-                        </p>
-
-                        <div className="bg-[#F8F4EE] rounded-[32px] p-8 mt-8 text-left max-w-4xl mx-auto">
-                            <p className="font-semibold text-[#2F4F3E] mb-4">
-                                It means asking:
-                            </p>
-
-                            <ul className="space-y-4 text-black/75">
-                                <li>• What happens when culture is experienced differently?</li>
-                                <li>• What happens when culture is preserved intentionally?</li>
-                                <li>• What happens when culture is reimagined for the future?</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </section >
@@ -373,37 +261,6 @@ export default function About() {
                                 </div>
 
                             </Card>
-                        ))}
-                    </div>
-                </div>
-            </section >
-
-            {/* Our Community */}
-            < section className="bg-white/10 rounded-3xl p-8 text-center transition hover:bg-white/20">
-                <div className="max-w-6xl mx-auto">
-                    <div className="text-center mb-14">
-                        <p className="uppercase tracking-[0.3em] text-white/70 mb-4">
-                            Culture Lives Through People
-                        </p>
-
-                        <h2 className="text-5xl font-bold mb-6">
-                            Our Community
-                        </h2>
-
-                        <p className="max-w-4xl mx-auto text-lg text-black/70">
-                            Zed Speak is strengthened by the people who participate in our experiences,
-                            share their stories, contribute their knowledge and help keep culture alive.
-                        </p>
-                    </div>
-
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {communityGroups.map((group) => (
-                            <div
-                                key={group}
-                                className="bg-white/10 rounded-[24px] p-6 text-center"
-                            >
-                                <p className="text-lg font-medium">{group}</p>
-                            </div>
                         ))}
                     </div>
                 </div>

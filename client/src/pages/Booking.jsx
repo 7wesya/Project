@@ -14,27 +14,12 @@ export default function Booking() {
         },
         "kids-cultural-explorers": {
             title: "Kids Cultural Explorers",
-            category: "Experience",
-        },
-        "roots-and-routes": {
-            title: "Roots & Routes",
-            category: "Experience",
-        },
-        "cook-and-connect": {
-            title: "Cook & Connect",
-            category: "Experience",
-        },
-        "beneath-the-chitenge-circle": {
-            title: "Beneath the Chitenge Circle",
             category: "Programme",
         },
-        "keep-our-languages-alive": {
-            title: "Keep Our Languages Alive",
-            category: "Programme",
-        },
-        "culture-lab": {
-            title: "Culture Lab",
-            category: "Programme",
+
+        "culture-but-different": {
+            title: "Culture But Different: The Experience",
+            category: "Experience",
         },
     };
 

@@ -1,11 +1,12 @@
 
 import zedTable from "../assets/images/experiences/Zed Table.jpg";
 import cultureButDifferent from "../assets/images/experiences/Culture but different.jpg";
-import rootsAndRoutes from "../assets/images/experiences/Roots & Routes.jpg";
+import kidsCulturalExplorers from "../assets/images/experiences/Kids Cultural Explorers.jpg";
 import cookAndConnect from "../assets/images/experiences/Cook & Connect.jpg";
 const experiences = [
     {
         id: "zed-table",
+        type: "experience",
         title: "The Zed Table",
         tagline: "Conversation • Games • Food • Connection",
         image: zedTable,
@@ -34,6 +35,7 @@ const experiences = [
     },
     {
         id: "culture-but-different",
+        type: "experience",
         title: "Culture, But Different: The Experience",
         tagline: "Discover • Experience • Preserve • Reimagine",
         image: cultureButDifferent,
@@ -58,45 +60,25 @@ const experiences = [
         },
     },
     {
-        id: "roots-and-routes",
-        title: "Roots & Routes",
-        tagline: "Explore • Heritage • Storytelling • Place",
-        image: rootsAndRoutes,
+        id: "kids-cultural-explorers",
+        type: "programme",
+        title: "Kids Cultural Explorers",
+        tagline: "Play • Storytelling • Language • Discovery",
+        image: kidsCulturalExplorers,
         description:
-            "An interactive cultural exploration experience that invites participants to discover Zambia through its communities, traditions, heritage, landscapes and local stories.",
+            "An interactive cultural experience inviting children to discover Zambia through play, storytelling, language, music, creativity and hands- on exploration.",
         details: {
             about:
-                "Roots & Routes is an interactive cultural exploration experience that invites participants to discover Zambia through its communities, traditions, heritage, landscapes, and local stories. Through guided explorations, storytelling, cultural encounters, and interactive activities, participants connect with the people and places that shape Zambia's identity while exploring the journeys that continue to define its future.",
-            duration: "2–4 Hours",
-            audience: "Culture curious individuals or groups",
+                "Kids Cultural Explorers is an interactive cultural experience that invites children to discover Zambia through play, storytelling, language, music, creativity, and hands-on exploration. Each adventure introduces young explorers to the richness of Zambia's cultures, traditions, heritage, and everyday life through engaging activities designed to spark curiosity, confidence, and connection.",
+            duration: "6 Weeks\nOne 90-minute guided storytelling circle each week",
+            audience: "Children between the ages of 6–15",
             expect: [
-                "Guided explorations",
-                "Storytelling and local culture",
-                "Community and cultural encounters",
-                "Reflection, photography and creative documentation",
-                "Meaningful connections with Zambia's people and places",
-            ],
-        },
-    },
-    {
-        id: "cook-and-connect",
-        title: "Cook & Connect",
-        tagline: "Food • Storytelling • Tradition • Community",
-        image: cookAndConnect,
-        description:
-            "An interactive culinary and cultural experience where food becomes a gateway to conversation, storytelling and connection.",
-        details: {
-            about:
-                "Cook & Connect is an interactive culinary and cultural experience where food becomes a gateway to conversation, storytelling, and connection. Participants prepare, share, and enjoy traditional and contemporary Zambian dishes while exploring the memories, traditions, ingredients, and stories that make food an important part of culture and community.",
-            duration: "2–3 Hours",
-            audience: "Culturally curious individuals or groups",
-            expect: [
-                "Hands-on cooking or food demonstrations",
-                "Stories behind traditional dishes and ingredients",
-                "Shared meals and cultural conversations",
-                "Interactive food challenges and storytelling activities",
-                "Exploration of regional cuisines and traditions",
-                "Meaningful connection through food and storytelling",
+                "Play and cultural games",
+                "Stories and imagination",
+                "Music and movement",
+                "Arts and creativity",
+                "Language and discovery",
+                "Team adventures",
             ],
         },
     },

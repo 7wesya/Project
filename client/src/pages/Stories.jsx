@@ -6,10 +6,10 @@ import SectionTitle from "../components/ui/SectionTitle";
 import Card from "../components/ui/Card";
 import PlaceholderImage from "../components/ui/PlaceholderImage";
 import stories from "../data/stories";
+import gallery from "../data/gallery";
 import { Link } from "react-router-dom";
 
 export default function Stories() {
-
 
     return (
         <div className="bg-[#F8F4EE] min-h-screen animate-fadeIn">
@@ -84,7 +84,7 @@ export default function Stories() {
                         </p>
 
                         <h2 className="text-5xl font-bold text-[#2F4F3E] mb-6">
-                            Six Areas Of Conversation
+                            Areas Of Conversation
                         </h2>
 
                         <p className="max-w-3xl mx-auto text-lg text-black/70">
@@ -175,6 +175,59 @@ export default function Stories() {
                     </div>
                 </div>
             </section >
+            < Section className="bg-white" >
+                <Container>
+
+                    <div className="text-center mb-16">
+
+                        <p className="uppercase tracking-[0.35em] text-[#015A1F] font-semibold mb-4">
+                            Moments That Tell Our Story
+                        </p>
+
+                        <h2 className="text-5xl font-bold text-[#015A1F] mb-6">
+                            Through The Zed Speak Lens
+                        </h2>
+
+                        <p className="max-w-3xl mx-auto text-lg text-[#0F0F0E]/75 leading-relaxed">
+                            Every experience, programme and conversation creates moments worth
+                            remembering. This gallery will showcase the people, places and
+                            stories that continue to shape the Zed Speak journey.
+                        </p>
+
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                        {gallery.map((item) => (
+
+                            <Card key={item.id}>
+
+                                <PlaceholderImage
+                                    image={item.image}
+                                    label={item.title}
+                                />
+
+                                <div className="p-6">
+
+                                    <p className="uppercase text-sm tracking-widest text-[#D71E0F] mb-2">
+                                        {item.category}
+                                    </p>
+
+                                    <h3 className="text-2xl font-bold text-[#015A1F]">
+                                        {item.title}
+                                    </h3>
+
+                                </div>
+
+                            </Card>
+
+                        ))}
+
+                    </div>
+
+                </Container>
+
+            </Section >
 
             {/* CTA */}
             < section className="py-24 px-6" >
