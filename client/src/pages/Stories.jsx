@@ -23,7 +23,6 @@ export default function Stories() {
                     <SectionTitle
                         subtitle="Stories & Insights"
                         title="Stories That Help Us Experience, Preserve & Reimagine Culture"
-                        description="A growing collection of reflections, essays, conversations and cultural stories exploring identity, language, heritage, storytelling, community and the many ways culture shapes who we are."
                     />
 
                 </Container>
@@ -80,17 +79,12 @@ export default function Stories() {
                 <div className="max-w-7xl mx-auto">
                     <div className="mb-14 text-center">
                         <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
-                            Explore Stories
+
                         </p>
 
                         <h2 className="text-5xl font-bold text-[#2F4F3E] mb-6">
-                            Areas Of Conversation
+                            Explore Stories
                         </h2>
-
-                        <p className="max-w-3xl mx-auto text-lg text-black/70">
-                            These categories can hold articles, essays, interviews,
-                            reflections and community stories as the Zed Speak archive grows.
-                        </p>
                     </div>
 
                     <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -135,46 +129,6 @@ export default function Stories() {
                 </div>
             </section>
 
-            {/* Story Themes */}
-            <section className="bg-white py-24 px-6">
-                <div className="max-w-6xl mx-auto">
-                    <div className="text-center mb-14">
-                        <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
-                            What You’ll Find Here
-                        </p>
-
-                        <h2 className="text-5xl font-bold text-[#2F4F3E] mb-6">
-                            A Home For Cultural Reflection
-                        </h2>
-
-                        <p className="max-w-3xl mx-auto text-lg text-black/70">
-                            The Stories page is designed to hold a growing collection of writing
-                            that reflects on where we come from, how we live and what culture
-                            means in the present and future.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {[
-                            "Personal reflections and essays",
-                            "Interviews and conversations",
-                            "Language and heritage stories",
-                            "Community voices and lived experiences",
-                            "Creative storytelling and cultural commentary",
-                            "Ideas about the future of culture in Zambia",
-                        ].map((item) => (
-                            <div
-                                key={item}
-                                className="bg-[#F8F4EE] rounded-3xl p-8 shadow-sm hover:shadow-md transition"
-                            >
-                                <p className="text-lg font-medium text-[#2F4F3E]">
-                                    {item}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section >
             < Section className="bg-white" >
                 <Container>
 

@@ -53,18 +53,6 @@ export default function Contact() {
                                     Lusaka, Zambia
                                 </p>
                             </div>
-
-                            <div className="bg-white p-6 rounded-3xl shadow-sm">
-                                <h3 className="text-2xl font-semibold mb-3">
-                                    🤝 Partnerships
-                                </h3>
-
-                                <p className="text-black/70">
-                                    We welcome brands, organisations,
-                                    institutions and creatives who want to
-                                    collaborate with us.
-                                </p>
-                            </div>
                         </div>
                     </div>
 

@@ -23,11 +23,8 @@ export default function Experiences() {
                 <Container>
 
                     <SectionTitle
-                        subtitle="Experiences & Programmes"
-                        title="Experience Culture Differently"
-                        description="Discover interactive cultural experiences and immersive programmes designed to help people experience, preserve and reimagine Zambian culture."
+                        title="Experiences & Programmes"
                     />
-
                 </Container>
 
             </Section>
@@ -184,8 +181,8 @@ export default function Experiences() {
             {/* Why Experiences Matter */}
             <Section className="bg-[#015A1F] text-white">
                 <Container className="text-center max-w-5xl">
-                    <h2 className="text-5xl font-bold mb-6">
-                        Experience . Preserve . Reimagine
+                    <h2 className="text-5xl font-bold mb-9 !text-white">
+                        Experience • Preserve • Reimagine
                     </h2>
 
                     <p className="text-xl text-white/80 leading-relaxed">
@@ -195,53 +192,6 @@ export default function Experiences() {
                     </p>
                 </Container>
             </Section>
-
-            {/* Private and Custom Experiences */}
-            <section className="py-24 px-6">
-                <div className="max-w-7xl mx-auto">
-                    <h2 className="text-5xl font-bold text-center mb-16 text-[#2F4F3E]">
-                        Private and Custom Experiences & Programmes
-                    </h2>
-
-                    <div className="grid md:grid-cols-3 gap-8">
-                        <div className="bg-white rounded-[32px] p-8 shadow-sm">
-                            <h3 className="text-2xl font-bold mb-4 text-[#2F4F3E]">
-                                Private Events
-                            </h3>
-
-                            <p className="text-black/70 leading-relaxed">
-                                Book a Zed Speak experience and programme for birthdays, family gatherings,
-                                intimate celebrations or private cultural moments designed
-                                around your group.
-                            </p>
-                        </div>
-
-                        <div className="bg-white rounded-[32px] p-8 shadow-sm">
-                            <h3 className="text-2xl font-bold mb-4 text-[#2F4F3E]">
-                                Team Experiences & Programmes
-                            </h3>
-
-                            <p className="text-black/70 leading-relaxed">
-                                Create meaningful team-building moments through cultural
-                                games, storytelling, food, reflection and shared experiences
-                                and programmes
-                                tailored for organisations and groups.
-                            </p>
-                        </div>
-
-                        <div className="bg-white rounded-[32px] p-8 shadow-sm">
-                            <h3 className="text-2xl font-bold mb-4 text-[#2F4F3E]">
-                                Custom Experiences & Programmes
-                            </h3>
-
-                            <p className="text-black/70 leading-relaxed">
-                                Looking for something unique? We can design a custom
-                                experience and programme around your audience, occasion, theme or learning goals.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             {/* CTA */}
             <section className="py-20 px-6 text-center">

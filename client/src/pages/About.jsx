@@ -212,60 +212,6 @@ export default function About() {
                 </div>
             </section >
 
-            {/* Meet the Team */}
-            < section className="py-24 px-6" >
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-16">
-                        <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
-                            The People Behind Zed Speak
-                        </p>
-
-                        <h2 className="text-5xl font-bold text-[#2F4F3E] mb-6">
-                            Meet The Team
-                        </h2>
-
-                        <p className="max-w-4xl mx-auto text-lg text-black/70">
-                            Behind every Zed Speak experience is a growing community of individuals
-                            passionate about culture, creativity, storytelling, learning and connection.
-                            Together, we are building spaces where culture can be experienced,
-                            preserved and reimagined for future generations.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-8">
-                        {team.map((member) => (
-                            <Card key={member.id}>
-
-                                <div className="bg-[#F8F4EE] rounded-t-[32px] flex items-center justify-center p-6">
-                                    <img
-                                        src={member.image}
-                                        alt={member.name}
-                                        className="h-80 w-auto object-contain"
-                                    />
-                                </div>
-
-                                <div className="p-8">
-
-                                    <h3 className="text-2xl font-bold text-[#015A1F] mb-2">
-                                        {member.name}
-                                    </h3>
-
-                                    <p className="text-[#D71E0F] font-medium mb-4">
-                                        {member.role}
-                                    </p>
-
-                                    <p className="text-[#0F0F0E]/70 leading-relaxed">
-                                        {member.bio}
-                                    </p>
-
-                                </div>
-
-                            </Card>
-                        ))}
-                    </div>
-                </div>
-            </section >
-
             {/* Join the Journey */}
             < section className="py-24 px-6" >
                 <div className="max-w-5xl mx-auto bg-[#7A4B2A] rounded-[40px] p-12 md:p-16 text-center text-white">
