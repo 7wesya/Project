@@ -8,9 +8,6 @@ export default function Contact() {
 
             {/* Hero */}
             <section className="pt-36 pb-20 px-6 text-center">
-                <p className="uppercase tracking-[0.3em] text-[#7A4B2A] mb-4">
-                    Let's Start A Conversation
-                </p>
 
                 <h1 className="text-5xl md:text-7xl font-bold mb-8">
                     Let's Start A Conversation

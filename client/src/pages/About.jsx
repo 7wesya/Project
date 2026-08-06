@@ -215,11 +215,12 @@ export default function About() {
             {/* Join the Journey */}
             < section className="py-24 px-6" >
                 <div className="max-w-5xl mx-auto bg-[#7A4B2A] rounded-[40px] p-12 md:p-16 text-center text-white">
+
                     <p className="uppercase tracking-[0.3em] text-white/70 mb-4">
                         Join The Journey
                     </p>
 
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white!">
                         Be Part Of A New Cultural Conversation
                     </h2>
 
@@ -232,7 +233,7 @@ export default function About() {
                     <div className="flex flex-wrap justify-center gap-4">
                         <Link
                             to="/join-journey"
-                            className="inline-block bg-white text-[#7A4B2A] px-8 py-4 rounded-full font-semibold hover:opacity-90 transition"
+                            className="inline-block border border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#7A4B2A] transition"
                         >
                             Join The Journey
                         </Link>

@@ -1,7 +1,7 @@
 
 import zedTable from "../assets/images/experiences/Zed Table.jpg";
 import cultureButDifferent from "../assets/images/experiences/Culture but different.jpg";
-import kidsCulturalExplorers from "../assets/images/experiences/Kids Cultural Explorers.jpg";
+import kidsCulturalExplorers from "../assets/images/experiences/Kids Cultural Explorers.jpg"
 import cookAndConnect from "../assets/images/experiences/Cook & Connect.jpg";
 const experiences = [
     {
@@ -61,7 +61,7 @@ const experiences = [
     },
     {
         id: "kids-cultural-explorers",
-        type: "programme",
+        type: "experience",
         title: "Kids Cultural Explorers",
         tagline: "Play • Storytelling • Language • Discovery",
         image: kidsCulturalExplorers,
